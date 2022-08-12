@@ -751,6 +751,7 @@ button.btn.btn-info {
     display: flex;
     justify-content: space-between;
     height: 440px;
+    width: 1140px;
 }
 .new-items{
     position: relative;
