@@ -627,6 +627,7 @@ button.btn.btn-info {
     justify-content: left;
     margin: 25px 0;
     font-weight: 600;
+    margin-left: -4px;
 }
 .top-selling .next-arrow-title{
     display: flex;
@@ -658,7 +659,7 @@ button.btn.btn-info {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    column-gap: 25px;
+    column-gap: 29px;
 
 }
 .items span{
@@ -713,7 +714,7 @@ button.btn.btn-info {
     justify-content: space-between;
     text-align: center;
     margin-bottom: 60px;
-    column-gap: 25px;
+    column-gap: 29px;
 }
 /* End Top salling */
 /* ---------------------------- */
@@ -753,18 +754,23 @@ button.btn.btn-info {
 }
 .new-items{
     position: relative;
-    width: 355px;
+    width: 360px;
     height: 340px;
     cursor: pointer;
 }
 .new-items:hover{
     color: #0ca8c9;
 }
+
 .newitem-text{
     /* height: 80px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.latest-items .new-items img{
+    width: 360px;
+    height: 241px;
 }
 .latest-items .new-items h5{
     width: 360px;
@@ -772,7 +778,7 @@ button.btn.btn-info {
     font-style: 500;
     font-size: 16px;
     line-height: 25px;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 .latest-items .new-items p{
     position: absolute;
@@ -853,6 +859,7 @@ button.btn.btn-info {
     cursor: pointer;
     font-size: 16px;
     color: #fff;
+    width: 178px;
 }
 
 /* End newsletter */
