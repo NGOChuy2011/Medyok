@@ -672,6 +672,9 @@ button.btn.btn-info {
     line-height: 22px;
     padding-top: 10px;
 }
+.items span:hover{
+    color: #0ca8c9;
+}
 .items p {
     color: #0ca8c9;
     font-size: 13px;
@@ -687,10 +690,10 @@ button.btn.btn-info {
     color: #696969;
     font-size: 13px;
     font-weight: 600;
-    margin-top: 6px;
+    margin-top: 5px;
 }
 .items{
-    /* position: relative; */
+    position: relative;
     width: 100%;
     cursor: pointer;
 }
@@ -704,10 +707,14 @@ button.btn.btn-info {
     top: 50%;
     left: 50%;
     transform: translateX(-50px);
-    z-index: 10;
+    z-index: 2;
     margin: 0px;
     display: none;
 }
+.items:hover #addcart{
+    display: block;
+}
+
 .items-selling .r2{
     margin-top: 53px;
     display: flex;
@@ -751,6 +758,7 @@ button.btn.btn-info {
     display: flex;
     justify-content: space-between;
     height: 440px;
+    width: 1140px;
 }
 .new-items{
     position: relative;
