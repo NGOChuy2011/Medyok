@@ -10,7 +10,6 @@ btn.forEach(function(button,index){
         // console.log(productImg,productName,productPrice)
         addcart(productImg,productName,productPrice)
     }})
-
 })
 function addcart(productImg,productName,productPrice){
     var addtr = document.createElement('tr')
@@ -30,7 +29,6 @@ function addcart(productImg,productName,productPrice){
     carttotal()
     deleteCart()
 }
-
 // --------------------total-price------------------
 function carttotal (){
     var cartItem = document.querySelectorAll('tbody tr')
@@ -52,7 +50,6 @@ function carttotal (){
     inputchange ()
     // console.log(carttotalA)
 }
-
 // --------------------Delete-cart------------------
 function deleteCart(){
     var cartItem = document.querySelectorAll('tbody tr')
@@ -75,24 +72,8 @@ function inputchange (){
         carttotal()
         })
     }
-      
 }
 // --------------------------------cart----------------------------------------
-// const cartbtn = document.querySelector('.btn_x')
-// const cartshow = document.querySelector('.cart')
-// cartshow.addEventListener('click',function(){
-//     document.querySelector('.on_off_cart').style.display = "block"
-// })
-// cartbtn.addEventListener('click',function(){
-//     document.querySelector('.on_off_cart').style.display = "none"
-//     console.log('aa')
-// })
-
-
-
-
-
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Get the button, and when the user clicks on it, execute myFunction
 document.getElementById("myBtn").onclick = function() {myFunction()};
 

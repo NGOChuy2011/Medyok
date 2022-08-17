@@ -93,17 +93,31 @@
 
                         <div class="search">
                             <nav class="navbar navbar-light">
-                                <form class="">
-                                    <select name="category" id="">
-                                        <option value="ALL Category">All Category</option>
-                                        <option value="ALL Category">All Category</option>
-                                        <option value="ALL Category">All Category</option>
-                                        <option value="ALL Category">All Category</option>
-                                    </select>
-                                    <input class="form-control" type="text" placeholder="Search for product">
+                                <form style="display:flex;" class="">
+                                    <div class="category" id="category">
+                                        <span style="display: flex;">
+                                            <a href="#">All Category</a>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                        
+                                        <ul class="category-show">
+                                            <li>
+                                                <a href="#">Categories</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#">Categories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Categories</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="form-control">
+                                        <input type="text" placeholder="Search for product">
+                                    </div>
                                     <button class="btn btn-info" type="submit">
                                         <i class="glass fa-solid fa-magnifying-glass"></i>
-                                 </button>
+                                    </button>
                                 </form>
                             </nav>
                         </div>
@@ -156,7 +170,7 @@
                                             <div class="price-total">
                                                 <p style="font-weight: bold;">Tổng tiền: $<span>0</span></p>
                                             </div>
-                                            <button>Múc hết</button>
+                                            <button>Thanh Toán</button>
                                         </form>
                                     </div>
                                 </div>
@@ -173,38 +187,36 @@
         <div class="header-bottom-background">
             <div class="header-bottom container">
                 <div class="header-botton-flex">   
-
-                        <div class="menu-categories js-menu">
-                            <div class="categori-menu" >
-                                <img class="icon-menu" src="assets/fonts/menu.png" alt="☺">
-                                <a  href="#">Categories</a>
-                            </div>
-                            <ul class="categori">
-                                <li>
-                                    <a href="#">Categories</a> 
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </li>
-                                <li>
-                                    <a href="#">Categories</a>
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </li>
-                                <li>
-                                    <a href="#">Categories</a>
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </li>
-                            </ul>
+                    <div class="menu-categories js-menu">
+                        <div class="categori-menu" >
+                            <img class="icon-menu" src="assets/fonts/menu.png" alt="☺">
+                            <a  href="#">Categories</a>
                         </div>
-                        <div class="navbar-menu">
-                            <ul class="nav">
-                                <li><a href="#">Home</a> </li>
-                                <li><a href="#">About</a> </li>
-                                <li><a href="#">Services</a> </li>
-                                <li><a href="#">Blog</a> </li>
-                                <li><a href="#">Page</a> </li>
-                                <li><a href="#">Contact</a> </li>
-                            </ul>
-                        </div>
-
+                        <ul class="categori">
+                            <li>
+                                <a href="#">Categories</a> 
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </li>
+                            <li>
+                                <a href="#">Categories</a>
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </li>
+                            <li>
+                                <a href="#">Categories</a>
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-menu">
+                        <ul class="nav">
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#">About</a> </li>
+                            <li><a href="#">Services</a> </li>
+                            <li><a href="#">Blog</a> </li>
+                            <li><a href="#">Page</a> </li>
+                            <li><a href="#">Contact</a> </li>
+                        </ul>
+                    </div>
                 </div> 
             </div>
         </div>
@@ -392,7 +404,7 @@
                             10000 MCG
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item2">
                         <img src="assets/images/tsell2.png" alt="">
@@ -405,7 +417,7 @@
                             <del>$35.00</del>
                             <p>$<span class="price_1">30.00</span></p>
                         </div>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item3">
                         <img src="assets/images/tsell3.png" alt="">
@@ -415,7 +427,7 @@
                             Blueberry Rasp
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item4">
                         <img src="assets/images/tsell4.png" alt="">
@@ -425,7 +437,7 @@
                             Methylcobalamin
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="r2">
@@ -437,7 +449,7 @@
                             10000 MCG
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item6">
                         <img src="assets/images/tsell6.png" alt="">
@@ -447,7 +459,7 @@
                             Advanced Colon
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item7">
                         <img src="assets/images/tsell7.png" alt="">
@@ -457,7 +469,7 @@
                             Blueberry Rasp
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item8">
                         <img src="assets/images/tsell8.png" alt="">
@@ -467,7 +479,7 @@
                             Methylcobalamin
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -481,7 +493,7 @@
                             10000 MCG
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item10">
                         <img src="assets/images/tsell2.png" alt="">
@@ -494,7 +506,7 @@
                             <del>$35.00</del>
                             <p>$<span class="price_1">30.00</span></p>
                         </div>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item11">
                         <img src="assets/images/tsell11.png" alt="">
@@ -504,7 +516,7 @@
                             Blueberry Rasp
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item12 ">
                         <img src="assets/images/tsell12.png" alt="">
@@ -514,7 +526,7 @@
                             Methylcobalamin
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="r2">
@@ -526,7 +538,7 @@
                             10000 MCG
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item14">
                         <img src="assets/images/tsell6.png" alt="">
@@ -536,7 +548,7 @@
                             Advanced Colon
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item15">
                         <img src="assets/images/tsell15.png" alt="">
@@ -546,7 +558,7 @@
                             Blueberry Rasp
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                     <div class="items item16">
                         <img src="assets/images/tsell16.png" alt="">
@@ -556,7 +568,7 @@
                             Methylcobalamin
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
-                        <button id="addcart">ADD CART</button>
+                        <button id="addcart">ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -575,7 +587,7 @@
                 <div class="newitem-text">
                     <h5 class="">Probiotics may help battle antibiotic resistance Probiotics may help
                     </h5>
-                    <p>14 June 2018 by <span class="chuxanh"> Admin</span></p>
+                    <p>14 June 2018 by <a href=""><span class="chuxanh"> Admin</span></a></p>
                 </div>
             </div>
             <div class="new-items">
@@ -583,7 +595,7 @@
                 <div class="newitem-text">
                     <h5 class="">Study overturns what we know about kidney stones
                     </h5>
-                    <p>14 June 2018 by <span class="chuxanh"> Admin</span></p>
+                    <p>14 June 2018 by <a href=""><span class="chuxanh"> Admin</span></a></p>
                 </div>
             </div>
             <div class="new-items">
@@ -591,7 +603,7 @@
                 <div class="newitem-text">
                     <h5 class="">Hair loss: Scientists test wearable regrowth device
                     </h5>
-                    <p>14 June 2018 by <span class="chuxanh"> Admin</span></p>
+                    <p>14 June 2018 by <a href=""><span class="chuxanh"> Admin</span></a></p>
                 </div>
             </div>
         </div>
@@ -692,6 +704,13 @@
     $(document).ready(function(){
         $(".js-menu").click(function(){
             $(".categori").slideToggle("slow");
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".fa-caret-down").click(function(){
+            $(".category-show").slideToggle("slow");
         });
     });
 </script>

@@ -175,27 +175,63 @@ body{
     display: flex;
     align-items: center;
 }
-select {
+.category {
+    position: relative;
     border: 0;
-    margin-right: 35px;
+    margin-right: 14px;
     margin-left: 10px;
+    padding: 6px;
     cursor: pointer;
     color: #8f8f8f;
     outline: none;
+    z-index: 1;
 }
+.category-show{
+    position: absolute;
+    top: 40px;
+    left: 3px;
+    display: none;
+}
+.category a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 13px;
+    color: #8f8f8f;
+    font-size: 12px;
+    padding-top: 5px;
+}
+.category span i{
+    padding: 6px 4px;
+    margin-right: 20px;
+}
+.category-show li{
+    list-style: none;
+    padding: 6px 20px;
+    padding-right: 48px;
+    background-color: #fff;
+    border: 1px solid #8f8f8f4d;
+    /* border-radius: 50px 0 0 50px; */
+    /* border-top:1px solid #fff ;
+    border-bottom: 1px solid #fff; */
+}
+/* .category li:last-child{
+    border-top:1px solid #fff ;
+    border-bottom: 1px solid #8f8f8f;
+} */
 nav.navbar.navbar-light {
-    border: 0.01px solid #ebebeb;
+    border: 0.1px solid #ebebeb;
     border-radius: 50px 50px 50px 50px;
     border-right: 0;
 }
-input.form-control{
+.form-control input{
     border-top: 0;
     border-right: 0;
     border-bottom: 0;
-    padding-left: 30px;
-    padding-right: 140px;
+    margin: 7px 0px;
+    padding: 3px 175px 3px 20px;
     outline: none;
-    border-left-color: #e0e0e0;
+    border-left-color: #e0e0e040;
+    font-size: 12px;
 }
 .glass{
     color: #fff;
@@ -279,7 +315,7 @@ button.btn.btn-info {
 .setting-cart .cart .cart-click{
     /* display: none; */
     width: 500px;
-    height: 100vh; 
+    height: 80vh; 
     box-shadow: #403c3cba 0px 2px 2px 1px;
     position: absolute;
     top: 50px;
@@ -412,13 +448,8 @@ button.btn.btn-info {
     float: right;
     padding: 12px;
 }
-
-
-
-
 .navbar-menu .nav{
     display: flex;
-    /* column-gap: 50px; */
     justify-content: space-between;
 }
 .navbar-menu .nav li{
@@ -427,8 +458,10 @@ button.btn.btn-info {
     text-align: center;
 }
 .navbar-menu .nav li:hover{
-    background-color: #787878;
-
+    background-color: #ffffff;
+    color: #0ca8c9;
+}.navbar-menu .nav li:hover a{
+    color: #0ca8c9;
 }
 .navbar-menu .nav li a{
     color: #fff;
@@ -447,13 +480,6 @@ button.btn.btn-info {
 /* BEGIN SLIDER */
 .slider{
     position: relative;
-    /* margin-top: 46px; */
-    /* padding-top: 39%; */
-    /* height: 750px; */
-    /* background-image: url('../images/img-slider.png'); */
-    /* background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat; */
     display: none;
 }
 .slider .img-next-slider img{
@@ -555,24 +581,22 @@ button.btn.btn-info {
     position: absolute;
 }
 /* END SLIDER */
-
 .row{}
 /* Begin item-row  */
 .item{
     width: 100%;
     height: 160px;
 }
-
 .item-row{
     display: flex;
     font-family: 'Poppins', sans-serif;
-    /* justify-content: center; */
     padding-top: 60px;
     column-gap: 30px;
 }
 .item-hot{
     display: flex;
     width: 300px;
+    cursor: pointer;
 }
 .item-hot img{
     margin-right: 20px;
@@ -850,7 +874,7 @@ button.btn.btn-info {
     padding-top: 5px;
     background-color: #0ca8c9;
     color: white;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translateX(-50px);
     z-index: 2;
@@ -915,12 +939,10 @@ button.btn.btn-info {
     position: relative;
     width: 360px;
     height: 340px;
-    cursor: pointer;
 }
 .new-items:hover{
     color: #0ca8c9;
 }
-
 .newitem-text{
     /* height: 80px; */
     display: flex;
@@ -930,10 +952,11 @@ button.btn.btn-info {
 .latest-items .new-items img{
     width: 360px;
     height: 241px;
+    cursor: pointer;
 }
 .latest-items .new-items h5{
     width: 360px;
-    /* padding-top: 30px; */
+    cursor: pointer;
     font-style: 500;
     font-size: 16px;
     line-height: 25px;
@@ -944,12 +967,12 @@ button.btn.btn-info {
     bottom: 0px;
     font-size: 12px;
     color: #8f8f8f;
+    cursor: default;
 }
 .chuxanh{
     color: #20acca;
     display: inline-block;
 }
-
 /* End Latest new */
 /* ---------------------------- */
 /* Begin newsletter */
@@ -979,7 +1002,7 @@ button.btn.btn-info {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-    color: #8f8f8f;
+    color: #ffffff;
     font-size: 14px;
     margin-top: 150px;
 }
@@ -998,17 +1021,18 @@ button.btn.btn-info {
 .newsletter .form-signup .signup{
     display: flex;
     justify-content: space-between;
-    padding: 7px 7px;
+    padding: 6px 6px;
+    height: 68px;
 }
 .newsletter .form-signup .signup input{
+    outline: none;
     border: 0;
     border-radius: 50px;
-    padding-left: 20px;
-    /* padding-right: 200px; */
-    outline: none;
-    border-left-color: #e0e0e0;
+    padding-left: 26px;
+    padding-right: 1px;
     font-size: 13px;
     width: 620px;
+    color: #8f8f8f;
 }
 .newsletter .form-signup .signup button{
     border-radius: 50px;
@@ -1020,7 +1044,6 @@ button.btn.btn-info {
     color: #fff;
     width: 178px;
 }
-
 /* End newsletter */
 /* ------------------------------ */
 /* Begin Brands */
@@ -1038,23 +1061,19 @@ button.btn.btn-info {
 .brands img:hover{
     transform: scale(1.5);
 }
-
 /* End Brands */
 /* ------------------------ */
 /* Begin Footer */
 .footer{
     background-color: #f2f2f2;
-    height: 320px;
+    height: 316px;
 }
 .listfooter{
     display: flex;
     justify-content: space-between;
     padding-top: 52px;
-    /* width: 235px; */
-    /* column-gap: 235px; */
 }
 .listfooter .contact-us{
-    /* cursor: pointer; */
     width: 265px;
     display: inline-grid;
 }
@@ -1069,13 +1088,15 @@ button.btn.btn-info {
 }
 .listfooter .contact-us ul li i{
     color: #20acca;
-    padding: 5px 16px 0px 0px;
+    padding: 5px 20px 0px 0px;
+}
+.listfooter .contact-us ul li:first-child i{
+    color: #20acca;
+    padding: 5px 22px 0px 0px;
 }
 .listfooter .contact-us ul li a{
     text-decoration: none;
-    /* color: #8f8f8f; */
 }
-
 .listfooter .contact-us .icon-contact{
     display: flex;
     color: #8f8f8f;
@@ -1086,7 +1107,6 @@ button.btn.btn-info {
 }
 .listfooter .wlist{
     width: 165px;
-    /* display: inline-grid; */
 }
 .listfooter ul li{
     margin-bottom: 13px;
