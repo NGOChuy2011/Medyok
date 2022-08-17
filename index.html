@@ -95,10 +95,10 @@
                             <nav class="navbar navbar-light">
                                 <form class="">
                                     <select name="category" id="">
-                                        <option value="ALL Category">ALL Category</option>
-                                        <option value="ALL Category">ALL Category</option>
-                                        <option value="ALL Category">ALL Category</option>
-                                        <option value="ALL Category">ALL Category</option>
+                                        <option value="ALL Category">All Category</option>
+                                        <option value="ALL Category">All Category</option>
+                                        <option value="ALL Category">All Category</option>
+                                        <option value="ALL Category">All Category</option>
                                     </select>
                                     <input class="form-control" type="text" placeholder="Search for product">
                                     <button class="btn btn-info" type="submit">
@@ -107,11 +107,63 @@
                                 </form>
                             </nav>
                         </div>
-                        <div class="cart">
-                            <img class="icon-setting" src="assets/fonts/icon-setting.png" alt="">
-                            <img src="assets/fonts/cart.png" alt="">
+                        <div class="setting-cart">
+                            <div class="setting">
+                                <img class="icon-setting" src="assets/fonts/icon-setting.png" alt="">
+                                <div class="">
+                                    <div class="gear-setting"></div>
+                                    <div class="setting-click">
+                                        <img src="assets/images/tsell5.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <img id="myBtn" class="icon-cart" src="assets/fonts/cart.png" alt="" >
+                                <div id="myDropdown" class="on_off_cart ">    
+                                    <div class="gear-cart"></div>
+                                    
+                                    <!-- gio hang vip pro -->
+                                    <div class="cart-click">
+                                        
+                                            <!-- <i id="btn_x" class="fa-solid fa-xmark"></i> -->
+                                            <h4 class="chuxanh">CART</h4>
+                                           
+                                        <form action="">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sản phẩm</th>
+                                                        <th>Giá</th>
+                                                        <th>SL</th>
+                                                        <th>Chọn</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- <tr>
+                                                        <td><img src="/assets/images/tsell1.png" alt="">GENIUS</td>
+                                                        <td><span>$30.00</span></td>
+                                                        <td><input type="number" value="1" min="1"></td>
+                                                        <td>Xoá</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="/assets/images/tsell15.png" alt="">STONE BREAKES</td>
+                                                        <td><span>$30.00</span></td>
+                                                        <td><input type="number" value="1" min="1"></td>
+                                                        <td><span class="delete_prd">Xoá</span></td>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                            <div class="price-total">
+                                                <p style="font-weight: bold;">Tổng tiền: $<span>0</span></p>
+                                            </div>
+                                            <button>Múc hết</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <span>0</span>
+                                </div>
+                            </div>
                         </div>
-                    
                     </div>
                 </div>
             </div>
@@ -200,7 +252,9 @@
             
             <h1 class="text-heading-slider">Find Any <span class="chuxanh">Medicine</span> <br> You Need!</h1>
             <p class="text-description">Free Standard Shipping Everyday</p>
-            <a class="shop-now hov-text" href="">Shop Now</a>
+        </div>
+        <div class="shop-now hov-text">
+            <a href="">Shop Now</a>
         </div>
     </div>
 
@@ -220,7 +274,9 @@
             
             <h1 class="text-heading-slider">Find Any <span class="chuxanh">Medicine</span> <br> You Need!</h1>
             <p class="text-description">Free Standard Shipping Everyday</p>
-            <a class="shop-now hov-text" href="">Shop Now</a>
+        </div>
+        <div class="shop-now hov-text">
+            <a href="">Shop Now</a>
         </div>
     </div>
 </div>
@@ -335,8 +391,8 @@
                             <br>
                             10000 MCG
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item2">
                         <img src="assets/images/tsell2.png" alt="">
@@ -347,9 +403,9 @@
                         </span>
                         <div id="gach">
                             <del>$35.00</del>
-                            <p>$30.00</p>
+                            <p>$<span class="price_1">30.00</span></p>
                         </div>
-                        <p id="addcart">ADD CART</p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item3">
                         <img src="assets/images/tsell3.png" alt="">
@@ -358,8 +414,8 @@
                             <br>
                             Blueberry Rasp
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item4">
                         <img src="assets/images/tsell4.png" alt="">
@@ -368,8 +424,8 @@
                             <br>
                             Methylcobalamin
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                 </div>
                 <div class="r2">
@@ -380,8 +436,8 @@
                             <br>
                             10000 MCG
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item6">
                         <img src="assets/images/tsell6.png" alt="">
@@ -390,8 +446,8 @@
                             <br>
                             Advanced Colon
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item7">
                         <img src="assets/images/tsell7.png" alt="">
@@ -400,8 +456,8 @@
                             <br>
                             Blueberry Rasp
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item8">
                         <img src="assets/images/tsell8.png" alt="">
@@ -410,8 +466,8 @@
                             <br>
                             Methylcobalamin
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                 </div>
             </div>
@@ -424,8 +480,8 @@
                             <br>
                             10000 MCG
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item10">
                         <img src="assets/images/tsell2.png" alt="">
@@ -436,9 +492,9 @@
                         </span>
                         <div id="gach">
                             <del>$35.00</del>
-                            <p>$30.00</p>
+                            <p>$<span class="price_1">30.00</span></p>
                         </div>
-                        <p id="addcart">ADD CART</p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item11">
                         <img src="assets/images/tsell11.png" alt="">
@@ -447,8 +503,8 @@
                             <br>
                             Blueberry Rasp
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item12 ">
                         <img src="assets/images/tsell12.png" alt="">
@@ -457,8 +513,8 @@
                             <br>
                             Methylcobalamin
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                 </div>
                 <div class="r2">
@@ -469,8 +525,8 @@
                             <br>
                             10000 MCG
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item14">
                         <img src="assets/images/tsell6.png" alt="">
@@ -479,8 +535,8 @@
                             <br>
                             Advanced Colon
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item15">
                         <img src="assets/images/tsell15.png" alt="">
@@ -489,8 +545,8 @@
                             <br>
                             Blueberry Rasp
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                     <div class="items item16">
                         <img src="assets/images/tsell16.png" alt="">
@@ -499,8 +555,8 @@
                             <br>
                             Methylcobalamin
                         </span>
-                            <p>$30.00</p>
-                        <p id="addcart">ADD CART</p>
+                        <p>$<span class="price_1">30.00</span></p>
+                        <button id="addcart">ADD CART</button>
                     </div>
                 </div>
             </div>
@@ -628,6 +684,8 @@
         </div>
     </div>
 <!-- End footer -->
+<!-- --------------------------Main.JS------------------------- -->
+<script src="main.js"></script>
 <!-- Begin JS Categori -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
@@ -657,7 +715,13 @@
             slides[i].style.display = "none";  
         }
         slides[slideIndex-1].style.display = "block"; 
+        
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
+
+
 </script>
 <!-- js End Next slide -->
 <!-- js Bengin coundowntime-->
@@ -712,7 +776,6 @@
     }
 </script>
 <!-- js End next top selling -->
-
 
 </body>
 
