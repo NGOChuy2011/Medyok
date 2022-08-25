@@ -819,4 +819,16 @@
         margin-left: 10%;
         width: 90%;
     }
+    .next-slide {
+        height: 265px;
+    }
+    .slider .text-slider{
+        bottom: 40%;
+    }
+    .shop-now {
+        bottom: 70px;
+    }
+    .slider .img-next-slider {
+        height: 265px;
+    }
 }
