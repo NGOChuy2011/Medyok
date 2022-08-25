@@ -851,4 +851,7 @@
     .new {
         height: 1080px;
     }
+    .setting-cart .cart .cart-click {
+        width: 300px;
+    }
 }
