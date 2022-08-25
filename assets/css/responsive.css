@@ -717,6 +717,12 @@
     .newsletter .form-signup{
         width: 87%;
     }
+    .setting-cart .cart .cart-click{
+        width: 310px;
+    }
+    .menu-categories .categori{
+        width: 145px;
+    }
 }
 
 /* ~~~~~~~~~~ Màn 425px ~~~~~~~~~~~~~~~~~~~~ */
@@ -804,6 +810,14 @@
         margin-left: 14%;
         width: 85%;
     }
+    .listfooter ul li{
+        font-size: 11px;
+    }
+    .new {
+        height: 1170px;
+    }
+    
+    
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~ Màn 320px ~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
@@ -830,5 +844,11 @@
     }
     .slider .img-next-slider {
         height: 265px;
+    }
+    .design p {
+        font-size: 10px;
+    }
+    .new {
+        height: 1080px;
     }
 }
