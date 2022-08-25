@@ -1,0 +1,822 @@
+/* màn  */
+@media only screen and (max-width: 1440px) {
+    .container{
+        width: 95%;
+    }
+    .slider .text-slider{
+        left: 10%;
+    }
+    .shop-now{
+        left: 10%;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+    .arrow-slider{
+        display: none;
+    }
+    .slider .text-slider{
+        left: 5.5%;
+    }
+    .shop-now{
+        left: 5.5%;
+    }    
+    .item{
+        height: 235px;
+    }
+    .item-row{
+        column-gap: normal;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    .item-hot{
+        flex: 1 1 50%;
+        padding: 30px 0px;
+        justify-content: flex-start;
+    }
+    .secure-payments_item img {
+        margin-left: 12px;
+    }
+    .sale-main{
+        width: 55%;
+    }
+    #addcart{
+        top: 60%;
+        padding-top: 0px;
+        height: 25px;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (max-width: 1140px){
+    .container{
+        width: 95%;
+    }
+    .slider .img-next-slider img{
+        object-fit: fill;
+    }
+    .slider .text-slider {
+        left: 2%;
+    }
+    .shop-now{
+        left: 2%
+    }
+    .form-control input{
+        padding: 3px 105px 3px 20px;
+    }
+    .sale-hot{
+        height: 90%;
+    }
+    .sale-main{
+        width: 76%;
+        height: 100%;
+    }
+    .sale-main .img-deal1{
+        width: 100%;
+        height: 478px;
+    }
+    .sale-extra .img-deal2{
+        width: 100%;
+        height: 229px;
+    }
+    .sale-extra .img-deal3{
+        width: 100%;
+        height: 229px;
+    }
+    .sale-extra{
+        width: 55%;
+        height: 100%;
+        padding-left: 20px;
+    }
+    .sale-top{
+        height: 100%;
+    }
+    .sale-bottom{
+        height: 100%;
+        margin-top: 20px;
+    }
+    .top-selling{
+        height: 90%;
+    }
+    .items-selling {
+        height: 90%;
+    }
+    .new .latest-title{
+        height: 25%;
+    }
+    .new .latest-title h2{
+        top: 28%;
+    }  
+    .new .latest-title p{
+        top: 0%;
+    }
+    .new{
+        height: 525px;
+    }
+    .latest-items{
+        height: auto;
+    }
+    .new-items{
+        width: 32%;
+    }
+    .latest-items .new-items h5{
+        min-height: 100%;
+        height: 50px;
+    }
+    .brands-img{
+        /* width: 20%; */
+    }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* màn 1024 */
+@media only screen and (max-width: 1024px){
+    .next-slide{
+        height: 600px;
+    }
+    .slider .img-next-slider{
+        height: 600px;
+    }
+    .slider .text-slider h1{
+        font-size: 50px;
+        line-height: 75px;
+    }
+    .text-description{
+        font-size: 15px;
+    }
+    .sale-main .img-deal1 .time-countdown{
+        bottom: 115px;
+    }
+    .time-countdown .countdown{
+        width: 40px;
+        height: 40px;
+    }
+    .time-countdown h5{
+        font-size: 15px;
+        bottom: 14px;
+    }
+    .time-countdown p{
+        font-size: 10px;
+        bottom: 5px;
+    }
+    .sale-main .img-deal1 .text-sale{
+        font-size: 25px;
+        bottom: 60px;
+    }
+    .sale-extra .img-deal2 .text-sale{
+        font-size: 25px;
+    }
+    .sale-extra .img-deal3 .text-sale{
+        font-size: 25px;
+    }
+    #addcart{
+        top: 59%;
+        height: 8.5%;
+    }
+    /* .toptop-selling{
+        height: 105px;
+    }
+    .selling-title h2{
+        font-size: 15px;
+        margin: 36px 0;
+    }
+    .selling-title p{
+        font-size: 15px;
+        margin: 0px 0px;
+        margin-left: -4px;
+    } */
+}
+
+/* Màn 890px   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* saerch mobie */
+.search_mobie{
+    display: none;
+}
+
+@media only screen and (max-width: 890px){
+    .search{
+        display: none;
+    }
+    .search_preventive{
+        display: block;
+    }
+    .search_mobie{
+        display: none;
+    }
+    .items >span{
+        font-size: 75%;
+    }
+    .newsletter{
+        height: 320px;
+    }
+    .newsletter .text-keepget h3{
+        font-size: 25px;
+        margin-top: 7%;
+    }
+    .newsletter .text-keepget p {
+        font-size: 12px;
+        margin-top: 14%;
+    }
+    .newsletter .form-signup{
+        width: 62%;
+        height: 15%;
+        bottom: 25%;
+    }
+    .newsletter .form-signup .signup{
+        height: 100%;
+        padding: 3px 3px;
+    }
+    .newsletter .form-signup .signup input{
+        font-size: 11px;
+        width: 72%;
+    }
+    .newsletter .form-signup .signup button{
+        font-size: 14px;
+        padding: 0px;
+        width: 20%;
+    }
+    nav.navbar.navbar-light {
+        border: 0.1px solid #ebebeb;
+        border-radius: 50px 50px 50px 50px;
+        border-right: 0;
+        width: 320px;
+        height: 36px;
+        margin: 0 auto;
+    }
+    .form-control input{
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        padding: 0px;
+        outline: none;
+        border-left-color: #e0e0e040;
+        font-size: 11px;
+        padding-right: 2px;
+        padding-left: 5px;
+    }
+    .search_mobie .navbar form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .category {
+        position: relative;
+        border: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+        cursor: pointer;
+        color: #8f8f8f;
+        outline: none;
+        z-index: 1;
+    }
+    button.btn.btn-info{
+        border-radius: 0 50px 50px 0;
+        border-left: 0;
+        padding: 7px 23px;
+        border: none;
+        background-color: #20acca;
+        cursor: pointer;
+    }
+    .category a{
+        padding-right: 8px;
+        padding-left: 6px;
+        font-size: 11px;
+        padding-top: 7px;
+    }
+    .category span i{
+        margin-right: 10px;
+    }
+    #addcart{
+        top: 55%;
+        font-size: 11px;
+    }
+}
+
+/* màn  796px  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media only screen and (max-width: 796px){
+    .shop-now{
+        bottom: 200px;
+    }
+    .shop-now a{
+        font-size: 11px;
+    }
+    .slider .text-slider {
+        left: 2%;
+        bottom: 55%;
+    }
+    .text-header-top{
+        display: none;
+    }
+    #navbar-btn{
+        display: block;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    .next-slide{
+        height: 450px;
+    }
+    .slider .img-next-slider{
+        height: 450px;
+    }
+    .slider .text-slider h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .text-description{
+        font-size: 11px;
+    }
+    .sale-main .img-deal1 .time-countdown{
+        bottom: 115px;
+    }
+    .time-countdown .countdown{
+        width: 40px;
+        height: 40px;
+    }
+    .time-countdown h5{
+        font-size: 15px;
+        bottom: 14px;
+    }
+    .time-countdown p{
+        font-size: 10px;
+        bottom: 5px;
+    }
+    .sale-main .img-deal1 .text-sale{
+        font-size: 25px;
+        bottom: 60px;
+    }
+    .sale-extra .img-deal2 .text-sale{
+        font-size: 25px;
+    }
+    .sale-extra .img-deal3 .text-sale{
+        font-size: 25px;
+    }
+}
+/* Begin navbar menu mobie */
+.navbar-btn{
+    font-size: 34px;
+    height: 50px;
+    color: #fff;
+    display: none;
+    margin: auto 0;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.bars-staggered{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+.bars-staggered a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 6px 0;
+    padding-left: 6px;
+}
+.bars-staggered a:hover{
+    color: #000;
+}
+.navbar-btn .navbar-btn-show{
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    background-color: #0ca8c9;
+    z-index: 1;
+    line-height: 30px;
+    top: 50px;
+    width: 100px;
+    right: 0px;
+    display: none;
+}
+.navbar-btn .navbar-btn-show li{
+    width: 100px;
+    list-style: none;
+    text-align: center;
+}
+.navbar-btn .navbar-btn-show li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.navbar-btn .navbar-btn-show li a:hover{
+    color: #000;
+}
+/* End navba menu mobie */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 768px ~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (max-width: 768px){
+    .item-row{
+        padding: 0px;
+        width: 80%;
+        margin-left: 90px;
+    }
+    .sale-main .img-deal1 .text-sale {
+        font-size: 25px;
+        bottom: 60px;
+    }
+    .sale-main .img-deal1 {
+        width: 100%;
+        height: 450px;
+    }
+    .sale-main .img-deal1 .sale-up-to{
+        font-size: 16px;
+    }
+    .sale-extra .img-deal2 {
+        width: 100%;
+        height: 215px;
+    }
+    .sale-extra .img-deal2 .sale-up-to{
+        font-size: 16px;
+    }
+    .sale-extra .img-deal3 {
+        width: 100%;
+        height: 215px;
+    }
+    .sale-extra .img-deal3 .text-sale{
+        font-size: 19px;
+    }
+    .sale-extra .img-deal2 h3{
+        font-size: 55px;
+    }
+    .sale-extra .img-deal2 .text-sale {
+        font-size: 23px;
+    }
+    .sale-extra .img-deal3 .sale-up-to{
+        font-size: 16px;
+    }
+    #addcart{
+        top: 58%;
+        font-size: 11px;
+    }
+    .items{
+        width: calc(33.33% - 20px);
+    }
+    .latest-items .new-items p{
+        bottom: 10%;
+    }
+    .latest-items .new-items h5{
+        height: 70px;
+    }
+    .item-hot img {
+        margin-right: 20px;
+        width: 30px;
+        height: 40px;
+    }
+    .item-hot.support_item {
+        padding-left: 12px;
+    }
+    .item {
+        height: 210px;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ 660px ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (max-width: 660px){
+    .next-slide {
+        height: 400px;
+    }
+    .slider .img-next-slider {
+        height: 400px;
+    }
+    .item{
+        height: 280px ;
+    }
+    .item-hot{
+        flex: 1 1 100%;
+        padding: 10px 0px;
+    }
+    .item-hot.support_item {
+        padding-left: 0px;
+    }
+    .secure-payments_item img {
+        margin-left: 0px;
+    }
+    .item-row {
+        padding-top: 20px;
+        width: 50%;
+        margin-left: 35%;
+    }
+    .sale-hot{
+        flex-direction: column;
+    }
+    .sale-main {
+        width: 100%;
+        height: 100%;
+    }
+    .sale-extra {
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .sale-extra .img-deal2 img{
+        width: 100%;
+    }
+    .sale-extra .img-deal3 img{
+        width: 100%;
+    }
+    .items {
+        width: calc(50% - 20px);
+    }
+    #addcart{
+        top: 60%;
+    }
+    .new .latest-title {
+        height: 20%;
+    }
+    .new{
+        height: 725px;
+    }
+    .new .latest-title h2 {
+        top: 36px;
+    }
+    .latest-items{
+    flex-direction: column;
+    }
+    .new-items {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    margin-bottom: 20px;
+    }
+    .latest-items .new-items img {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+    }
+    .newitem-text{
+        width: 100%;
+        height: 100%;
+        padding-left: 20px;
+    }    
+    .latest-items .new-items h5{
+        height: 100%;
+        margin-top: 0px;
+    }
+    .latest-items .new-items p{
+        margin-top: 20px;
+    }
+    .items >span {
+        font-size: 80%;
+    }
+    .brands{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .brands-img{
+        width: 100%;
+        padding-top: 5%;
+    }
+    .brands img{
+        flex: 0 1 0%;
+        max-width: none;
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+    .footer{
+        height: auto;
+    }
+    .listfooter{
+        flex-direction: column;
+        text-align: center;
+    }
+    .listfooter .contact-us{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .listfooter .wlist{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .footercopyright .payment{
+        display: none;
+    }
+    .footercopyright #payment_mobie{
+        display: block;
+    }
+    .brands-img{
+        display: none;
+    }
+    #brands-img_mobie{
+        display: block;
+    }
+    .brands_mobie{
+        display: flex;
+        flex-direction: column;
+    }
+    .brands_r1{
+        display: flex;
+        justify-content: center;
+        padding: 0% 17%;
+    }
+    .brands_r2{
+        display: flex;
+        justify-content: center;
+    }
+    .selling-title p{
+        font-size: 80px;
+        margin: 0px;
+    }
+    .selling-title h2 {
+        font-size: 35px;
+        margin: 34px 0;
+    }
+    .toptop-selling {
+        height: 120px;
+    }
+    .top-selling .next-arrow-title{
+        padding-top: 0px;
+    }
+    .new .latest-title p{
+        font-size: 80px;
+    }
+    .new .latest-title h2{
+        font-size: 35px;
+    }
+}
+.footercopyright .payment_mobie{
+    display: none;
+    color: #0ca8c9;   
+    font-size: 30px;
+}
+.brands-img_mobie{
+    display: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ Màn 530px ~~~~~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (max-width: 531px){
+    .slider .img-next-slider {
+        height: 320px;
+    }
+    .next-slide {
+        height: 320px;
+    }
+    .slider .text-slider h1{
+        font-size: 35px;
+    }
+    .slider .text-slider {
+        left: 2%;
+        bottom: 50%;
+    }    
+    .shop-now {
+        bottom: 110px;
+    }
+    .selling-title p{
+        font-size: 60px;
+        margin: 0px;
+    }
+    .selling-title h2 {
+        font-size: 30px;
+        margin: 22px 0;
+    }
+    .toptop-selling {
+        height: 90px;
+    }
+    .top-selling .next-arrow-title{
+        padding-top: 0px;
+    }
+    .new .latest-title p{
+        font-size: 60px;
+    }
+    .new .latest-title h2{
+        font-size: 30px;
+        top: 25%;
+    }
+    .new .latest-title {
+        height: 14%;
+    }
+    .new {
+        height: 620px;
+    }
+    .item {
+        height: 315px;
+    }
+    .item-row{
+        margin-left: 26%;
+        width: 65%;
+    }
+    .newsletter .text-keepget p{
+        margin-top: 25%;
+    }
+    .newsletter .form-signup{
+        width: 87%;
+    }
+}
+
+/* ~~~~~~~~~~ Màn 425px ~~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (max-width: 426px){ 
+    .selling-title p{
+        font-size: 50px;
+    }
+    .toptop-selling {
+        height: 75px;
+    }
+    .selling-title h2 {
+        font-size: 23px;
+        margin: 21px 0;
+    }
+    .new .latest-title h2 {
+        font-size: 23px;
+        top: 25%;
+    }
+    .new .latest-title p {
+        font-size: 50px;
+    }
+    .item-row {
+        margin-left: 22%;
+        width: 65%;
+    }
+    .items {
+        width: calc(100% - 20px);
+    }
+    .items img {
+        height: 80%;
+        max-width: 100%;
+        width: 100%;
+    }
+    #addcart {
+        top: 68%;
+    }
+    .item-row {
+        margin-left: 15%;
+        width: 80%;
+    }
+    .new-items{
+        flex-direction: column;
+    }
+    .new {
+        height: 1250px;
+    }
+    .new .latest-title h2{
+        top: 0px;
+        margin-top: 20px;
+    }
+    .new .latest-title {
+        height: 6%;
+    }
+    .newsletter .text-keepget p {
+        margin-top: 30%;
+    }
+    .sale-main .img-deal1 .text-sale{
+        width: 285px;
+    }
+    .item-row {
+        margin-left: 17%;
+        width: 85%;
+    }
+}
+
+/*~~~~~~~~~~~~~~ Màn 375px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+@media only screen and (max-width: 376px){
+    .selling-title p {
+        font-size: 42px;
+    }
+    .selling-title h2 {
+        font-size: 21px;
+        margin: 16px 0;
+    }
+    .toptop-selling {
+        height: 68px;
+    }
+    .logo-center a img {
+        width: 100%;
+    }
+    .slider .text-slider h1{
+        line-height: 40px;
+    }
+    .item-row {
+        margin-left: 14%;
+        width: 85%;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Màn 320px ~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
+@media only screen and (max-width:321px) {
+    .logo-center {
+        max-width: 100%;
+        width: 53%;
+    }
+    .logo-center a img {
+        width: 100%;
+    }
+    .item-row {
+        margin-left: 10%;
+        width: 90%;
+    }
+}

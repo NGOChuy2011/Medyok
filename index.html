@@ -8,6 +8,7 @@
     <!-- <link rel="stylesheet" href="/font-icon/themify-icons-font/themify-icons/themify-icons.css"> -->
     <link rel="stylesheet" href="assets/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,39 +28,41 @@
                     <div class="border-icon-info">
                         <i class="icon-info fa-solid fa-location-dot"></i>
                     </div>
-                    <div>
+                    <div class="text-header-top">
                         <h5>Find us</h5>
                         <p>325 admiral unit, North cost, USA</p>
                     </div>
                 </a>
             </li>
 
-            <li><a class="header-top-info-left" href="">
-                <div class="border-icon-info">
-                    <i class="icon-info fa-solid fa-envelope"></i>
-                </div>
-                <div>
-                    <h5>Email Us</h5>
-                    <p>admin@medyplus.com</p>
-                </div>
+            <li>
+                <a class="header-top-info-left" href="">
+                    <div class="border-icon-info">
+                        <i class="icon-info fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text-header-top">
+                        <h5>Email Us</h5>
+                        <p>admin@medyplus.com</p>
+                    </div>
             </a>
             </li>
 
-            <li><a class="header-top-info-left" href="#">
-                <div class="border-icon-info">
-                    <i class="icon-info fa-solid fa-phone"></i>
-                </div>
-                <div>
-                    <h5>Call Us Now</h5>
-                    <p>002 - 0100 843 1112</p>
-                </div>
-            </a>
+            <li>
+                <a class="header-top-info-left" href="#">
+                    <div class="border-icon-info">
+                        <i class="icon-info fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text-header-top">
+                        <h5>Call Us Now</h5>
+                        <p>002 - 0100 843 1112</p>
+                    </div>
+                </a>
             </li>
             </ul>
             <div class="header-top-Language">
                 <div class="change-lang">
                     <img src="assets/fonts/co.png" alt="">
-                    <a class="hov-text" href="#">English</a>
+                    <a class="hov-text text-header-top" href="#">English</a>
                     <i class="icon-english fa-solid fa-angle-down"></i>
                     
                     <ul class="change-language">
@@ -87,19 +90,20 @@
             <div class="center-info ">
                 <div class="row">
                     <div class="logo-center">
-                    <img src="assets/fonts/logo.png" alt="logo">
+                    <a href="#"><img src="assets/fonts/logo.png" alt="logo"></a>
                     </div>
                     <div class="search-cart">
-
+                        <div class="search_preventive">
+                            <i class="fa-solid fa-magnifying-glass chuxanh" style="font-size: 25px;"></i>
+                        </div>
                         <div class="search">
                             <nav class="navbar navbar-light">
-                                <form style="display:flex;" class="">
+                                <form style="display:flex; " class="">
                                     <div class="category" id="category">
                                         <span style="display: flex;">
                                             <a href="#">All Category</a>
                                             <i class="fa-solid fa-caret-down"></i>
                                         </span>
-                                        
                                         <ul class="category-show">
                                             <li>
                                                 <a href="#">Categories</a> 
@@ -178,10 +182,39 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                </div>
+                <div class="search_mobie">
+                    <nav class="navbar navbar-light">
+                        <form class="">
+                            <div class="category" id="category">
+                                <span style="display: flex;">
+                                    <a href="#">All Category</a>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                                <ul class="category-show">
+                                    <li>
+                                        <a href="#">Categories</a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">Categories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Categories</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form-control">
+                                <input type="text" placeholder="Search for product">
+                            </div>
+                            <button class="btn btn-info" type="submit">
+                                <i class="glass fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </nav>
                 </div>
             </div>
         </div>
+        
         <!-- End Header Center -->
         <!-- Begin Header Bottom -->
         <div class="header-bottom-background">
@@ -217,7 +250,21 @@
                             <li><a href="#">Contact</a> </li>
                         </ul>
                     </div>
+                    <div class="navbar-btn" id="navbar-btn">
+                        <div class="bars-staggered">
+                            <i class="fa-solid fa-arrow-down-short-wide"></i>
+                            <a href="#">Home</a>
+                        </div>
+                        <ul class="navbar-btn-show">
+                            <li><a href="#">About</a> </li>
+                            <li><a href="#">Services</a> </li>
+                            <li><a href="#">Blog</a> </li>
+                            <li><a href="#">Page</a> </li>
+                            <li><a href="#">Contact</a> </li>
+                        </ul>
+                    </div>
                 </div> 
+                    
             </div>
         </div>
         <!-- End Header Bottom -->
@@ -296,28 +343,28 @@
 <!-- Begin item-Row -->
     <div class="item container">
         <div class="item-row">
-            <div class="item-hot">
+            <div class="item-hot free-ship_item">
                 <img src="assets/fonts/shipping.png" alt="">
                 <div class="item-content">
                     <h6>Free Shipping</h6>
                     <p>Free shipping for all US order </p>
                 </div>
             </div>
-            <div class="item-hot">
+            <div class="item-hot support_item">
                 <img src="assets/fonts/support247.png" alt="">
                 <div class="item-content">
                     <h6>Support 24/7</h6>
                     <p>We support 24 hours a day </p>
                 </div>
             </div>
-            <div class="item-hot">
+            <div class="item-hot day-to-return_item">
                 <img src="assets/fonts/day-return.png" alt="">
                 <div class="item-content">
                     <h6>30 Days Return</h6>
                     <p>You have 30 days to return </p>
                 </div>
             </div>
-            <div class="item-hot">
+            <div class="item-hot secure-payments_item">
                 <img src="assets/fonts/payments.png" alt="">
                 <div class="item-content">
                     <h6>Secure Payments</h6>
@@ -332,6 +379,7 @@
     <div class="sale-hot container">
     <div class="sale-main ">
         <div class="img-deal1">
+            <img src="assets/images/deal1.png" alt="">
             <div class="time-countdown" id="countdown">
                 <div class="countdown days">
                     <h5 id="days">230</h5>
@@ -358,6 +406,7 @@
     <div class="sale-extra">
         <div class="sale-top">
             <div class="img-deal2">
+                <img src="assets/images/deal2.png" alt="">
                 <div>
                     <h3 class="to-percent">30%</h3>
                     <h4 class="text-sale">DISCOUNT</h4>
@@ -367,7 +416,7 @@
         </div>
         <div class="sale-bottom">
             <div class="img-deal3">
-                
+                <img src="assets/images/deal3.png" alt="">
                 <h4 class="text-sale">ACCESSORIES</h4>
                 <div class="sale-up-to">Sale up to <span class="to-percent">20%</span>  off</div>
             </div>
@@ -401,7 +450,7 @@
                         <span>
                             Nature's Bounty Biotin 
                             <br>
-                            10000 MCG
+                            <span class="ellipsis">10000 MCG</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
@@ -411,7 +460,7 @@
                         <span>
                             Best Colon Detox Formula
                             <br>
-                            Advanced Colon
+                            <span> Advanced Colon</span>
                         </span>
                         <div id="gach">
                             <del>$35.00</del>
@@ -424,7 +473,7 @@
                         <span>
                             Natural Factors Vitamin C
                             <br>
-                            Blueberry Rasp
+                            <span> Blueberry Rasp</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
@@ -434,19 +483,17 @@
                         <span>
                             Jarrow Formulas
                             <br>
-                            Methylcobalamin
+                            <span> Methylcobalamin</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
                     </div>
-                </div>
-                <div class="r2">
                     <div class="items item5">
                         <img src="assets/images/tsell5.png" alt="">
                         <span>
                             Nature's Bounty Biotin 
                             <br>
-                            10000 MCG
+                            <span> 10000 MCG...</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
@@ -456,7 +503,7 @@
                         <span>
                             Best Colon Detox Formula
                             <br>
-                            Advanced Colon
+                            <span> Advanced Colon...</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
@@ -466,7 +513,7 @@
                         <span>
                             Natural Factors Vitamin C
                             <br>
-                            Blueberry Rasp
+                            <span> Blueberry Rasp...</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
@@ -476,12 +523,15 @@
                         <span>
                             Jarrow Formulas
                             <br>
-                            Methylcobalamin
+                            <span> Methylcobalamin</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
                     </div>
                 </div>
+                <!-- <div class="r2">
+                    
+                </div> -->
             </div>
             <div class="items-selling-next">
                 <div class="r1">
@@ -490,7 +540,7 @@
                         <span>
                             Nature's Bounty Biotin 
                             <br>
-                            10000 MCG
+                            <span class="ellipsis">10000 MCG</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
@@ -500,7 +550,7 @@
                         <span>
                             Best Colon Detox Formula
                             <br>
-                            Advanced Colon
+                            <span> Advanced Colon</span>
                         </span>
                         <div id="gach">
                             <del>$35.00</del>
@@ -513,29 +563,27 @@
                         <span>
                             Natural Factors Vitamin C
                             <br>
-                            Blueberry Rasp
+                            <span> Blueberry Rasp</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
                     </div>
-                    <div class="items item12 ">
+                    <div class="items item12">
                         <img src="assets/images/tsell12.png" alt="">
                         <span>
                             Jarrow Formulas
                             <br>
-                            Methylcobalamin
+                            <span> Methylcobalamin</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
                     </div>
-                </div>
-                <div class="r2">
                     <div class="items item13">
                         <img src="assets/images/tsell5.png" alt="">
                         <span>
                             Nature's Bounty Biotin 
                             <br>
-                            10000 MCG
+                            <span> 10000 MCG...</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
@@ -545,7 +593,7 @@
                         <span>
                             Best Colon Detox Formula
                             <br>
-                            Advanced Colon
+                            <span> Advanced Colon...</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
@@ -555,7 +603,7 @@
                         <span>
                             Natural Factors Vitamin C
                             <br>
-                            Blueberry Rasp
+                            <span> Blueberry Rasp...</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
@@ -565,12 +613,15 @@
                         <span>
                             Jarrow Formulas
                             <br>
-                            Methylcobalamin
+                            <span> Methylcobalamin</span>
                         </span>
                         <p>$<span class="price_1">30.00</span></p>
                         <button id="addcart">ADD TO CART</button>
                     </div>
                 </div>
+                <!-- <div class="r2">
+                    
+                </div> -->
             </div>
         </div>
     </div>
@@ -583,26 +634,29 @@
         </div>
         <div class="latest-items container">
             <div class="new-items">
-                <img src="assets/images/lnew1.png" alt="">
+                <div class="lnew_mobie">
+                    <a href="#"><img src="assets/images/lnew1.png" alt=""></a>
+                </div>
                 <div class="newitem-text">
-                    <h5 class="">Probiotics may help battle antibiotic resistance Probiotics may help
-                    </h5>
+                    <h5 class="">Probiotics may help battle antibiotic resistance Probiotics may help</h5>
                     <p>14 June 2018 by <a href=""><span class="chuxanh"> Admin</span></a></p>
                 </div>
             </div>
             <div class="new-items">
-                <img src="assets/images/lnew2.png" alt="">
+                <div class="lnew_mobie">
+                    <a href="#"><img src="assets/images/lnew2.png" alt=""></a>
+                </div>
                 <div class="newitem-text">
-                    <h5 class="">Study overturns what we know about kidney stones
-                    </h5>
+                    <h5 class="">Study overturns what we know about kidney stones</h5>
                     <p>14 June 2018 by <a href=""><span class="chuxanh"> Admin</span></a></p>
                 </div>
             </div>
             <div class="new-items">
-                <img src="assets/images/lnew3.png" alt="">
+                <div class="lnew_mobie">
+                    <a href="#"><img src="assets/images/lnew3.png" alt=""></a>
+                </div>
                 <div class="newitem-text">
-                    <h5 class="">Hair loss: Scientists test wearable regrowth device
-                    </h5>
+                    <h5 class="">Hair loss: Scientists test wearable regrowth device</h5>
                     <p>14 June 2018 by <a href=""><span class="chuxanh"> Admin</span></a></p>
                 </div>
             </div>
@@ -625,11 +679,26 @@
 <!-- End newsletter -->
 <!-- Begin Brands -->
     <div class="brands container">
-        <img src="assets/images/brand1.png" alt="brand">
-        <img src="assets/images/brand2.png" alt="brand">
-        <img src="assets/images/brand3.png" alt="brand">
-        <img src="assets/images/brand4.png" alt="brand">
-        <img src="assets/images/brand5.png" alt="brand">
+        <div class="brands-img">
+                <a href=""><img src="assets/images/brand1.png" alt="brand"></a>
+                <a href=""><img src="assets/images/brand2.png" alt="brand"></a>
+                <a href=""><img src="assets/images/brand3.png" alt="brand"></a>
+                <a href=""><img src="assets/images/brand4.png" alt="brand"></a>
+                <a href=""><img src="assets/images/brand5.png" alt="brand"></a>
+        </div>
+        <div class="brands-img_mobie" id="brands-img_mobie">
+            <div class="brands_mobie">
+                <div class="brands_r1">
+                    <a href=""><img src="assets/images/brand1.png" alt="brand"></a>
+                    <a href=""><img src="assets/images/brand2.png" alt="brand"></a>
+                </div>
+                <div class="brands_r2">
+                    <a href=""><img src="assets/images/brand3.png" alt="brand"></a>
+                    <a href=""><img src="assets/images/brand4.png" alt="brand"></a>
+                    <a href=""><img src="assets/images/brand5.png" alt="brand"></a>
+                </div>
+            </div>
+    </div>
     </div>
 <!-- End Brands -->
 <!-- Begin Footer -->
@@ -640,7 +709,7 @@
                 <ul c>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        <a class="hov-text" href="">Lorem Ipsum has been the industry's standard</a></li>
+                        <a class="hov-text" href="">Lorem Ipsum has been the indus-try's standard</a></li>
                     <li>
                         <i class="ti-email"></i>
                         <a class="hov-text" href="">contact@medic.com</a></li>
@@ -666,7 +735,7 @@
                 </ul>
             </div>
             <div class="categoryes wlist">
-                <h5 class="footer-title">CARETORYES</h5>
+                <h5 class="footer-title">CAREGORYES</h5>
                 <ul>
                     <li><a class="hov-text" href="#">Home medicine</a> </li>
                     <li><a class="hov-text" href="#">Baby & Child</a> </li>
@@ -694,6 +763,9 @@
         <div class="payment">
             <img src="assets/images/payment.png" alt="">
         </div>
+        <div class="payment_mobie" id="payment_mobie">
+            <i class="fa-solid fa-credit-card"></i>
+        </div>
     </div>
 <!-- End footer -->
 <!-- --------------------------Main.JS------------------------- -->
@@ -714,7 +786,25 @@
         });
     });
 </script>
-
+<!-- END JS Categori -->
+<!-- BEGIN show seart mobie -->
+<script>
+    $(document).ready(function(){
+        $(".search_preventive").click(function(){
+            $(".search_mobie").slideToggle("slow");
+        });
+    });
+</script>
+<!-- END show seart mobie -->
+<!-- BEGIN show menu man tabled -->
+<script>
+    $(document).ready(function(){
+        $(".fa-arrow-down-short-wide").click(function(){
+            $(".navbar-btn-show").slideToggle("slow");
+        });
+    });
+</script>
+<!-- END show menu man tabled -->
 <!-- End JS Categori -->
 <!-- js Begin Next slide -->
 <script>
