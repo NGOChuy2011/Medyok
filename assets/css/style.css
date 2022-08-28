@@ -3,10 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* word-spacing: 1px; */
 }
 html{
     scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body{
 }
@@ -22,6 +23,13 @@ body{
 .hov-text:hover{
     color: #0ca8c9;
     z-index: 2;
+}
+.chuxanh{
+    color: #20acca;
+    display: inline-block;
+}
+.grey {
+    color: #8f8f8f !important;
 }
 #main{}
 #header{}
@@ -117,16 +125,21 @@ body{
     text-align: left;
     font-size: 12px;
     padding: 0px 10px 6px 10px;
+    font-family: 'Poppins', sans-serif;
 }
-.header-top-info-left p{
+.header-top-info-left .text-header-top a{
+    text-decoration: none;
     color: white;
     font-size: 12px;
     padding: 0px 10px;
-    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 /* ----------------------------------------------------------- */
 /* Begin header-center */
 .header{}
+.search{
+    height: 43px
+}
 .center-info {
     padding: 23.8px 0;
     height: auto;
@@ -150,7 +163,7 @@ body{
     position: relative;
     border: 0;
     margin-right: 14px;
-    margin-left: 10px;
+    margin-left: 16px;
     padding: 6px;
     cursor: pointer;
     color: #8f8f8f;
@@ -166,15 +179,12 @@ body{
 }
 .category a{
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    padding-right: 13px;
     color: #8f8f8f;
     font-size: 12px;
-    padding-top: 5px;
+    padding-top: 4px;
 }
 .category span i{
-    padding: 6px 4px;
-    margin-right: 20px;
+    padding: 6px 14px;
 }
 .category-show li{
     list-style: none;
@@ -192,12 +202,13 @@ nav.navbar.navbar-light {
     border: 0.1px solid #ebebeb;
     border-radius: 50px 50px 50px 50px;
     border-right: 0;
+    height: 40px;
 }
 .form-control input{
     border-top: 0;
     border-right: 0;
     border-bottom: 0;
-    margin: 7px 0px;
+    margin: 8px 0px;
     padding: 3px 175px 3px 20px;
     outline: none;
     border-left-color: #e0e0e040;
@@ -209,7 +220,8 @@ nav.navbar.navbar-light {
 button.btn.btn-info {
     border-radius: 0 50px 50px 0;
     border-left: 0;
-    padding: 9px 23px;
+    padding: 9.5px 23px;
+    height: 100%;
     border: none;
     background-color: #20acca;
     cursor: pointer;
@@ -288,7 +300,7 @@ button.btn.btn-info {
     position: absolute;
     top: 50px;
     right: -5px;
-    z-index: 1;
+    z-index: 2;
     background-color: #f5f5f5;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -503,7 +515,7 @@ button.btn.btn-info {
     object-fit: cover;
 }
 .next-slide .fade{
-    animation-name: fade;
+    /* animation-name: fade; */
     animation-duration: 5s;
 } 
 @keyframes fade {
@@ -602,26 +614,67 @@ button.btn.btn-info {
 }
 .item-row{
     display: flex;
-    font-family: 'Poppins', sans-serif;
     padding-top: 60px;
-    column-gap: 30px;
 }
+.row_item_1,
+.row_item_2{
+    display: flex;
+    justify-content: space-around;
+}
+
 .item-hot{
     display: flex;
-    width: 300px;
+    width: 293px;
     cursor: pointer;
 }
-.item-hot img{
+.free-ship-icon{
+    background-image: url("/assets/fonts/shipping.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+.support-247-icon{
+    background-image: url("/assets/fonts/support247.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: -2px;
+}
+.day-to-return-icon{
+    background-image: url("/assets/fonts/day-return.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    /* margin-left: -10px; */
+}
+.secure-payments-icon{
+    background-image: url("/assets/fonts/payments.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 7px;
+    width: 40px;
+    height: 40px;
+}
+.item-hot .icon{
     margin-right: 20px;
 }
-.item-content h6{
-    font-size: 16px;
-    line-height: 1.1;
+.secure-payments{
+    margin-left: -10px;
 }
-.item-content p{
+.item-content{
+    line-height: 20px;
+}
+.item-content a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}
+.item-content span{
     font-size: 14px;
-    color: #8f8f8f;
-    padding-top: 4px;
 }
 /* END item-row  */
 /* ---------------------- */
@@ -670,7 +723,7 @@ button.btn.btn-info {
     font-family: 'Poppins', sans-serif;
     bottom: 20px;
 }
-.time-countdown p{
+.time-countdown span{
     position: absolute;
     text-align: center;
     left: 50%;
@@ -794,8 +847,9 @@ button.btn.btn-info {
     width: 300px;
     margin: 65px 0;
     z-index: 2;
+    font-family: 'Poppins', sans-serif;
 }
-.selling-title p{
+.selling-title span{
     position: absolute;
     color: #f5f5f5;
     font-size: 90px;
@@ -828,7 +882,7 @@ button.btn.btn-info {
 }
 .items-selling-next{
     display: none;
-    margin-left: -20px;
+    margin-left: -30px;
 }
 .items-selling .r1{
     display: flex;
@@ -874,18 +928,19 @@ button.btn.btn-info {
 .items{
     position: relative;
     cursor: pointer;
-    width: calc(25% - 20px);
-    margin-left: 20px;
+    width: calc(25% - 30px);
+    margin-left: 30px;
     margin-bottom: 5%;
 }
 .items img{
     max-width: 100%;
+    width: 100%;
 }
 #addcart{
     position: absolute;
     width: 100px;
     height: 30px;
-    padding-top: 5px;
+    padding-top: 2px;
     background-color: #0ca8c9;
     color: white;
     top: 65%;
@@ -897,12 +952,14 @@ button.btn.btn-info {
     cursor: pointer;
     border: none;
     display: none;
+    font-family: 'Poppins', sans-serif;
 }
 .items:hover #addcart{
     display: block;
 }
 #addcart:hover{
     border: 2px solid #fff;
+    color: #000;
 }
 /* .items-selling .r2{
     margin-top: 55px;
@@ -934,13 +991,14 @@ button.btn.btn-info {
     z-index: 1;
     font-weight: 600;
 }
-.new .latest-title p{
+.new .latest-title span{
     position: absolute;
     justify-content: center;
     color: #ebebeb;
     font-size: 90px;
     top: 63px;
     font-weight: 700;
+    
 }
 .latest-items{
     display: flex;
@@ -980,10 +1038,7 @@ button.btn.btn-info {
     color: #8f8f8f;
     cursor: default;
 }
-.chuxanh{
-    color: #20acca;
-    display: inline-block;
-}
+
 /* End Latest new */
 /* ---------------------------- */
 /* Begin newsletter */
@@ -1004,11 +1059,12 @@ button.btn.btn-info {
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 87px;
-font-size: 32px;
+    font-size: 32px;
     width: 100%;
     font-family: 'Poppins', sans-serif;
+    padding: 0 15px;
 }
 .newsletter .text-keepget p{
     position: absolute;
@@ -1019,7 +1075,8 @@ font-size: 32px;
     font-size: 14px;
     margin-top: 148px;
     width: 100%;
-    font-weight: 600;
+    font-weight: 400;
+    padding: 0 15px;
 }
 .newsletter .form-signup{
     position: absolute;
@@ -1105,13 +1162,20 @@ font-size: 32px;
     display: flex;
     line-height: 16px;
 }
+.listfooter .contact-us ul li:first-child{
+    margin-bottom: 15px;
+    list-style-type: none;
+    display: flex;
+    line-height: 16px;
+    margin-top: 0px;
+}
 .listfooter .contact-us ul li i{
     color: #20acca;
-    padding: 5px 20px 0px 0px;
+    padding: 1px 20px 0px 0px;
 }
 .listfooter .contact-us ul li:first-child i{
     color: #20acca;
-    padding: 5px 22px 0px 0px;
+    padding: 1px 22px 0px 0px;
 }
 .listfooter .contact-us ul li a{
     text-decoration: none;
@@ -1150,6 +1214,8 @@ font-size: 32px;
 }
 .footercopyright .payment{
     height: 30px;
-    cursor: pointer;
+}
+.footercopyright .payment img{
+    width: 100%;
 }
 /* End footer */

@@ -30,16 +30,17 @@
     }
     .item-row{
         column-gap: normal;
-        flex-wrap: wrap;
-        width: 70%;
-        margin: 0 auto;
-        padding: 15px 0;
+        flex-direction: column;
+        padding: 50px 0;
+        justify-content: center;
+        margin-left: 7%;
+        row-gap: 32px;
     }
-    .item-hot{
+    /* .item-hot{
         flex: 1 1 50%;
         padding: 30px 0px;
         justify-content: flex-start;
-    }
+    } */
     .secure-payments_item img {
         margin-left: 12px;
     }
@@ -50,6 +51,9 @@
         top: 60%;
         padding-top: 0px;
         height: 25px;
+    }
+    .listfooter .contact-us ul li:first-child{
+        margin-top: -8px;
     }
 }
 
@@ -112,9 +116,11 @@
     }
     .new .latest-title h2{
         top: 28%;
+        font-size: 38px
     }  
-    .new .latest-title p{
+    .new .latest-title span{
         top: 0%;
+        font-size: 85px;
     }
     .new{
         height: 525px;
@@ -126,8 +132,8 @@
         width: 32%;
     }
     .latest-items .new-items h5{
-        min-height: 100%;
         height: 50px;
+        min-height: auto;
     }
     .brands-img{
         /* width: 20%; */
@@ -153,16 +159,16 @@
         bottom: 115px;
     }
     .time-countdown .countdown{
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     .time-countdown h5{
-        font-size: 15px;
-        bottom: 14px;
+        font-size: 18px;
+        bottom: 19px;
     }
-    .time-countdown p{
-        font-size: 10px;
-        bottom: 5px;
+    .time-countdown span{
+        font-size: 11px;
+        bottom: 6px;
     }
     .sale-main .img-deal1 .text-sale{
         font-size: 25px;
@@ -178,18 +184,25 @@
         top: 59%;
         height: 8.5%;
     }
-    /* .toptop-selling{
-        height: 105px;
+    .sale-extra .img-deal2 .sale-up-to{
+        bottom: 15%;
+        width: 150px;
+    }
+    .sale-extra .img-deal3 .sale-up-to {
+        font-size: 16px;
+        width: 115px;
+        bottom: 25%;
     }
     .selling-title h2{
-        font-size: 15px;
-        margin: 36px 0;
+        font-size: 38px;
+        margin: 60px 0;
     }
-    .selling-title p{
-        font-size: 15px;
-        margin: 0px 0px;
-        margin-left: -4px;
-    } */
+    .selling-title span{
+        font-size: 85px;
+    }
+    .listfooter .contact-us ul li:first-child{
+        margin-top: -10px;
+    }
 }
 
 /* Màn 890px   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -198,7 +211,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 890px){
+@media only screen and (max-width: 891px){
     .search{
         display: none;
     }
@@ -219,7 +232,7 @@
         margin-top: 7%;
     }
     .newsletter .text-keepget p {
-        font-size: 12px;
+        font-size: 13px;
         margin-top: 14%;
     }
     .newsletter .form-signup{
@@ -247,57 +260,56 @@
         width: 300px;
         height: 36px;
         margin: 0 auto;
+        height: 100%;
     }
     .form-control input{
-        border-top: 0;
-        border-right: 0;
-        border-bottom: 0;
         padding: 0px;
         outline: none;
         border-left-color: #e0e0e040;
         font-size: 11px;
-        padding-right: 2px;
         padding-left: 5px;
+        width: 147px;
     }
     .search_mobie .navbar form{
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
     }
     .category {
-        position: relative;
-        border: 0;
         margin-right: 0;
         margin-left: 0;
         padding: 0;
-        cursor: pointer;
-        color: #8f8f8f;
-        outline: none;
-        z-index: 1;
     }
     button.btn.btn-info{
-        border-radius: 0 50px 50px 0;
-        border-left: 0;
-        padding: 8px 12px;
-        border: none;
-        background-color: #20acca;
-        cursor: pointer;
+        padding: 7px 12px;
     }
     .category a{
-        padding-right: 8px;
         padding-left: 6px;
         font-size: 11px;
         padding-top: 7px;
     }
-    .category span i{
-        margin-right: 10px;
-    }
     #addcart{
-        top: 55%;
+        top: 57%;
         font-size: 11px;
     }
+    .category-show{
+        top: 32px;
+    }
+    .category-show li{
+        padding: 6px;
+        padding-right: 36px;
+    }
+    .sale-extra .img-deal3 .text-sale {
+        font-size: 20px;
+    }
 }
-
+@media only screen and (max-width: 985px){
+    .latest-items .new-items h5 {
+        height: 50px;
+        min-height: 90%;
+    }
+}
 /* màn  796px  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media only screen and (max-width: 796px){
     .shop-now{
@@ -343,7 +355,7 @@
         font-size: 15px;
         bottom: 14px;
     }
-    .time-countdown p{
+    .time-countdown span{
         font-size: 10px;
         bottom: 5px;
     }
@@ -352,9 +364,6 @@
         bottom: 60px;
     }
     .sale-extra .img-deal2 .text-sale{
-        font-size: 25px;
-    }
-    .sale-extra .img-deal3 .text-sale{
         font-size: 25px;
     }
 }
@@ -403,6 +412,9 @@
     list-style: none;
     text-align: center;
 }
+.navbar-btn .navbar-btn-show li:last-child{
+    padding-bottom: 15px;
+}
 .navbar-btn .navbar-btn-show li a{
     color: #fff;
     text-decoration: none;
@@ -418,10 +430,11 @@
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 768px ~~~~~~~~~~~~~~~~~~~ */
 @media only screen and (max-width: 768px){
-    .item-row{
+    .item-row {
         padding: 0px;
-        width: 80%;
-        margin-left: 90px;
+        justify-content: space-around;
+        margin-left: 9%;
+        row-gap: 0;
     }
     .sale-main .img-deal1 .text-sale {
         font-size: 25px;
@@ -438,15 +451,12 @@
         width: 100%;
         height: 215px;
     }
-    .sale-extra .img-deal2 .sale-up-to{
-        font-size: 16px;
-    }
     .sale-extra .img-deal3 {
         width: 100%;
         height: 215px;
     }
     .sale-extra .img-deal3 .text-sale{
-        font-size: 19px;
+        font-size: 16px;
     }
     .sale-extra .img-deal2 h3{
         font-size: 55px;
@@ -454,35 +464,40 @@
     .sale-extra .img-deal2 .text-sale {
         font-size: 23px;
     }
-    .sale-extra .img-deal3 .sale-up-to{
-        font-size: 16px;
-    }
     #addcart{
-        top: 58%;
+        top: 60%;
         font-size: 11px;
     }
     .items{
-        width: calc(33.33% - 20px);
+        width: calc(33.33% - 30px);
     }
     .latest-items .new-items p{
         bottom: 10%;
     }
     .latest-items .new-items h5{
-        height: 70px;
     }
-    .item-hot img {
-        margin-right: 20px;
-        width: 30px;
-        height: 40px;
-    }
-    .item-hot.support_item {
-        padding-left: 12px;
+    .row_item_1, .row_item_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
     }
     .item {
-        height: 210px;
+        height: 250px;
+        padding-top: 25px;
+    }
+    button.btn.btn-info{
+        padding: 7px 13px;
+    }
+    .brands {
+        height: 193px;
     }
 }
-
+@media only screen and (max-width: 712px){
+    .latest-items .new-items h5 {
+    height: 73px;}
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ 660px ~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media only screen and (max-width: 660px){
     .next-slide {
@@ -492,7 +507,7 @@
         height: 400px;
     }
     .item{
-        height: 280px ;
+        height: 285px ;
     }
     .item-hot{
         flex: 1 1 100%;
@@ -505,7 +520,6 @@
         margin-left: 0px;
     }
     .item-row {
-        padding-top: 20px;
         width: 50%;
         margin-left: 35%;
     }
@@ -529,10 +543,10 @@
         width: 100%;
     }
     .items {
-        width: calc(50% - 20px);
+        width: calc(50% - 30px);
     }
     #addcart{
-        top: 60%;
+        top: 62%;
     }
     .new .latest-title {
         height: 20%;
@@ -604,12 +618,15 @@
         justify-content: center;
         margin-bottom: 30px;
     }
+    .footercopyright{
+        justify-content: space-around;
+        flex-direction: column;
+    }
     .footercopyright .payment{
-        display: none;
+        width: 310px;
     }
-    .footercopyright #payment_mobie{
-        display: block;
-    }
+   
+
     .brands-img{
         display: none;
     }
@@ -629,7 +646,7 @@
         display: flex;
         justify-content: center;
     }
-    .selling-title p{
+    .selling-title span{
         font-size: 80px;
         margin: 0px;
     }
@@ -643,20 +660,38 @@
     .top-selling .next-arrow-title{
         padding-top: 0px;
     }
-    .new .latest-title p{
+    .new .latest-title span{
         font-size: 80px;
     }
     .new .latest-title h2{
         font-size: 35px;
     }
-}
-.footercopyright .payment_mobie{
-    display: none;
-    color: #0ca8c9;   
-    font-size: 30px;
-}
-.brands-img_mobie{
-    display: none;
+    .row_item_1, .row_item_2{
+        height: 120px;
+    }
+    .sale-extra .img-deal2 .sale-up-to {
+        font-size: 18px;
+        bottom: 26%;
+        width: 100%;
+    }
+    .sale-extra .img-deal3 .sale-up-to {
+        font-size: 18px;
+        bottom: 37%;
+        width: 100%;
+    }
+    .sale-extra .img-deal3 .text-sale {
+        font-size: 23px;
+    }
+    .listfooter .contact-us ul li{
+        align-items: center;
+        justify-content: center;
+    }
+    .listfooter .contact-us .icon-contact{
+        justify-content: center;
+    }
+    .listfooter .contact-us ul li:first-child {
+        margin-top: 17px;
+    }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ Màn 530px ~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -677,7 +712,7 @@
     .shop-now {
         bottom: 110px;
     }
-    .selling-title p{
+    .selling-title span{
         font-size: 60px;
         margin: 0px;
     }
@@ -691,7 +726,7 @@
     .top-selling .next-arrow-title{
         padding-top: 0px;
     }
-    .new .latest-title p{
+    .new .latest-title span{
         font-size: 60px;
     }
     .new .latest-title h2{
@@ -705,7 +740,7 @@
         height: 620px;
     }
     .item {
-        height: 315px;
+        height: 290px;
     }
     .item-row{
         margin-left: 26%;
@@ -727,7 +762,7 @@
 
 /* ~~~~~~~~~~ Màn 425px ~~~~~~~~~~~~~~~~~~~~ */
 @media only screen and (max-width: 426px){ 
-    .selling-title p{
+    .selling-title span{
         font-size: 50px;
     }
     .toptop-selling {
@@ -741,7 +776,7 @@
         font-size: 23px;
         top: 25%;
     }
-    .new .latest-title p {
+    .new .latest-title span {
         font-size: 50px;
     }
     .item-row {
@@ -786,11 +821,21 @@
         margin-left: 17%;
         width: 85%;
     }
+    .sale-extra .img-deal2 .sale-up-to {
+        font-size: 18px;
+        bottom: 13%;
+        width: 145px;
+    }
+    .listfooter .contact-us ul li i {
+        padding: 0px 20px 0px 0px;
+    }.listfooter .contact-us ul li a {
+        padding-left: 0px;
+    }
 }
 
 /*~~~~~~~~~~~~~~ Màn 375px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 @media only screen and (max-width: 376px){
-    .selling-title p {
+    .selling-title span {
         font-size: 42px;
     }
     .selling-title h2 {
@@ -816,7 +861,11 @@
     .new {
         height: 1170px;
     }
-    
+    .sale-extra .img-deal3 .sale-up-to {
+        font-size: 18px;
+        bottom: 21%;
+        width: 130px;
+    }
     
 }
 
@@ -846,7 +895,7 @@
         height: 265px;
     }
     .design p {
-        font-size: 10px;
+        font-size: 12px;
     }
     .new {
         height: 1080px;

@@ -24,39 +24,39 @@
         <div class="header-top container">
             <ul class="header-top-info">
             <li>
-                <a class="header-top-info-left" href="#">
+                <div class="header-top-info-left" href="#">
                     <div class="border-icon-info">
                         <i class="icon-info fa-solid fa-location-dot"></i>
                     </div>
                     <div class="text-header-top">
                         <h5>Find us</h5>
-                        <p>325 admiral unit, North cost, USA</p>
+                        <a href="https://www.google.com/maps/@9.682084,105.568023,15z?hl=vi-VN">325 admiral unit, North cost, USA</a>
                     </div>
-                </a>
+                </div>
             </li>
 
             <li>
-                <a class="header-top-info-left" href="">
+                <div class="header-top-info-left" href="">
                     <div class="border-icon-info">
                         <i class="icon-info fa-solid fa-envelope"></i>
                     </div>
                     <div class="text-header-top">
                         <h5>Email Us</h5>
-                        <p>admin@medyplus.com</p>
+                        <a href="https://www.google.com/intl/vi/gmail/about/">admin@medyplus.com</a>
                     </div>
-            </a>
+            </div>
             </li>
 
             <li>
-                <a class="header-top-info-left" href="#">
+                <div class="header-top-info-left" href="#">
                     <div class="border-icon-info">
                         <i class="icon-info fa-solid fa-phone"></i>
                     </div>
                     <div class="text-header-top">
                         <h5>Call Us Now</h5>
-                        <p>002 - 0100 843 1112</p>
+                        <a href="#" >002 - 0100 843 1112</a>
                     </div>
-                </a>
+                </div>
             </li>
             </ul>
             <div class="header-top-Language">
@@ -117,7 +117,7 @@
                                         </ul>
                                     </div>
                                     <div class="form-control">
-                                        <input type="text" placeholder="Search for product">
+                                        <input type="text" placeholder="Search for Product..">
                                     </div>
                                     <button class="btn btn-info" type="submit">
                                         <i class="glass fa-solid fa-magnifying-glass"></i>
@@ -343,32 +343,40 @@
 <!-- Begin item-Row -->
     <div class="item container">
         <div class="item-row">
-            <div class="item-hot free-ship_item">
-                <img src="assets/fonts/shipping.png" alt="">
-                <div class="item-content">
-                    <h6>Free Shipping</h6>
-                    <p>Free shipping for all US order </p>
+            <div class="row_item_1">
+                <div class="item-hot free-ship_item">
+                    <div class="free-ship-icon icon"></div>
+                    <div class="item-content">
+                        <a href="#">Free Shipping</a>
+                        <br>
+                        <span class="grey">Free shipping for all US order</span>
+                    </div>
+                </div>
+                <div class="item-hot support_item">
+                    <div class="support-247-icon icon"></div>
+                    <div class="item-content">
+                        <a href="#">Support 24/7</a>
+                        <br>
+                        <span class="grey">We support 24 hours a day</span>
+                    </div>
                 </div>
             </div>
-            <div class="item-hot support_item">
-                <img src="assets/fonts/support247.png" alt="">
-                <div class="item-content">
-                    <h6>Support 24/7</h6>
-                    <p>We support 24 hours a day </p>
+            <div class="row_item_2">
+                <div class="item-hot day-to-return_item">
+                    <div class="day-to-return-icon icon"></div>
+                    <div class="item-content">
+                        <a href="#">30 Days Return</a>
+                        <br>
+                        <span class="grey">You have 30 days to return</span>
+                    </div>
                 </div>
-            </div>
-            <div class="item-hot day-to-return_item">
-                <img src="assets/fonts/day-return.png" alt="">
-                <div class="item-content">
-                    <h6>30 Days Return</h6>
-                    <p>You have 30 days to return </p>
-                </div>
-            </div>
-            <div class="item-hot secure-payments_item">
-                <img src="assets/fonts/payments.png" alt="">
-                <div class="item-content">
-                    <h6>Secure Payments</h6>
-                    <p>100% Secure & Safe</p>
+                <div class="item-hot secure-payments_item">
+                    <div class="secure-payments-icon icon"></div>
+                    <div class="item-content secure-payments">
+                        <a href="#">Secure Payments</a>
+                        <br>
+                        <span class="grey">100% Secure & Safe</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -383,19 +391,19 @@
             <div class="time-countdown" id="countdown">
                 <div class="countdown days">
                     <h5 id="days">230</h5>
-                    <p>DAYS</p>
+                    <span>DAYS</span>
                 </div>
                 <div class="countdown hrs">
                     <h5 id="hrs">24</h5>
-                    <p>HRS</p>
+                    <span>HRS</span>
                 </div>
                 <div class="countdown mins">
                     <h5 id="mins">40</h5>
-                    <p>MINS</p>
+                    <span>MINS</span>
                 </div>
                 <div class="countdown sec">
                     <h5 id="sec">60</h5>
-                    <p>SEC</p>
+                    <span>SEC</span>
                 </div>
             </div>
             <h4 class="text-sale">BEAUTY & COSMETICS</h4>
@@ -431,7 +439,7 @@
         <div class="toptop-selling">
             <div class="selling-title">
                 <h2>Top selling</h2>
-                <p>Products</p>
+                <span>Products</span>
             </div>
             <div class="next-arrow-title">
                 <div class="arrowleft" onclick="plusSelling(-1)">
@@ -630,7 +638,7 @@
     <div class="new">
         <div class="latest-title">
             <h2>Latest news</h2>
-            <p>Hot news</p>
+            <span>Hot news</span>
         </div>
         <div class="latest-items container">
             <div class="new-items">
@@ -760,12 +768,9 @@
         <div class="design">
             <p>@2018 Design by <a href="#"><span class="chuxanh">Creative Wp</span></a> . All Rights Reserved. </p>
         </div>
-        <div class="payment">
+        <a href="#" class="payment">
             <img src="assets/images/payment.png" alt="">
-        </div>
-        <div class="payment_mobie" id="payment_mobie">
-            <i class="fa-solid fa-credit-card"></i>
-        </div>
+        </a>
     </div>
 <!-- End footer -->
 <!-- --------------------------Main.JS------------------------- -->
