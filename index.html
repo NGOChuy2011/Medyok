@@ -321,18 +321,26 @@
 <!-- End Header -->
 <!-- Begin Slider -->
 <div class="next-slide">
+    <div class="arrow-slider">
+        <div class="arrow-left" onclick="plusSlides(-1)">
+            <i id="arrow-1" class="fa-solid fa-angle-left next-left-slider" ></i>
+        </div>
+        <div class="arrow-right" onclick="plusSlides(1)">
+            <i id="arrow-2" class="fa-solid fa-angle-right next-right-slider" ></i>
+        </div>
+    </div>
     <div class="slider fade">
         <div class="img-next-slider">
             <img src="assets/images/img-slider.png" alt="">
         </div>
-        <div class="arrow-slider">
+        <!-- <div class="arrow-slider">
             <div class="arrow-left" onclick="plusSlides(-1)">
                 <i id="arrow-1" class="fa-solid fa-angle-left next-left-slider" ></i>
             </div>
-            <div class="arrow-right" onclick="plusSlides(1)">
+            <div class="arrow-right" onclick="plusSlides(+1)">
                 <i id="arrow-2" class="fa-solid fa-angle-right next-right-slider" ></i>
             </div>
-        </div>
+        </div> -->
         <div class="text-slider">
             
             <h1 class="text-heading-slider">Find Any <span class="chuxanh">Medicine</span> <br> You Need!</h1>
@@ -348,14 +356,14 @@
         <div class="img-next-slider">
             <img src="assets/images/img-slider2.png" alt="">
         </div>
-        <div class="arrow-slider">
+        <!-- <div class="arrow-slider">
             <div class="arrow-left" onclick="plusSlides(-1)">
                 <i id="arrow-1" class="fa-solid fa-angle-left next-left-slider"></i>
             </div>
-            <div class="arrow-right" onclick="plusSlides(1)">
+            <div class="arrow-right" onclick="plusSlides(+1)">
                 <i id="arrow-2" class="fa-solid fa-angle-right next-right-slider"></i>
             </div>
-        </div>
+        </div> -->
         <div class="text-slider">
             
             <h1 class="text-heading-slider">Find Any <span class="chuxanh">Medicine</span> <br> You Need!</h1>
@@ -370,14 +378,14 @@
         <div class="img-next-slider">
             <img src="assets/images/img-slider3.png" alt="">
         </div>
-        <div class="arrow-slider">
+        <!-- <div class="arrow-slider">
             <div class="arrow-left" onclick="plusSlides(-1)">
                 <i id="arrow-1" class="fa-solid fa-angle-left next-left-slider"></i>
             </div>
-            <div class="arrow-right" onclick="plusSlides(1)">
+            <div class="arrow-right" onclick="plusSlides(+1)">
                 <i id="arrow-2" class="fa-solid fa-angle-right next-right-slider"></i>
             </div>
-        </div>
+        </div> -->
         <div class="text-slider">
             
             <h1 class="text-heading-slider">Find Any <span class="chuxanh">Medicine</span> <br> You Need!</h1>
@@ -870,29 +878,32 @@
 <!-- End JS Categori -->
 <!-- js Begin Next slide -->
 <script>
-    let slideIndex = 1;
-        showSlides(slideIndex);
-    
+    var slideIndex = 1;
+    var timer = null;
+    showSlides(slideIndex);
+
     function plusSlides(n) {
+        clearTimeout(timer);
         showSlides(slideIndex += n);
     }
-    
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("slider");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slides[slideIndex-1].style.display = "block"; 
-        
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+    function currentSlide(n) {
+        clearTimeout(timer);
+        showSlides(slideIndex = n);
     }
 
-
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slider");
+        if (n==undefined){n = ++slideIndex}
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+        timer = setTimeout(showSlides, 3000);
+    } 
 </script>
 <!-- js End Next slide -->
 <!-- js Bengin coundowntime-->

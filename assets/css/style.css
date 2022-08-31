@@ -31,6 +31,20 @@ body{
 .grey {
     color: #8f8f8f !important;
 }
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+@keyframes fadee{
+    from {
+        transform: translateX(-100%);
+    }
+    to{transform: translateX(0%)}
+}
+@keyframes face{
+        from{ transform: rotate(360deg);}
+    to { transform: rotate(0deg);}
+}
 #main{}
 #header{}
 
@@ -499,7 +513,9 @@ button.btn.btn-info {
 .next-slide{
     max-width: 100%;
     height: 750px;
+    position: relative;
 }
+
 .slider{
     position: relative;
     display: none;
@@ -514,24 +530,10 @@ button.btn.btn-info {
     vertical-align: middle;
     object-fit: cover;
 }
-.next-slide .fade{
-    /* animation-name: fade; */
+/* .next-slide .fade{
+    animation-name: fade;
     animation-duration: 5s;
-} 
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-@keyframes fadee{
-    from {
-        transform: translateX(-100%);
-    }
-    to{transform: translateX(0%)}
-}
-@keyframes face{
-        from{ transform: rotate(360deg);}
-    to { transform: rotate(0deg);}
-}
+}  */
 .slider .text-slider{
     position: absolute;
     bottom: 312px;
