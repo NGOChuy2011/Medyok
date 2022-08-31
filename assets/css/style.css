@@ -521,9 +521,17 @@ button.btn.btn-info {
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-    /* from{ transform: rotate(180deg);}
-    to { transform: rotate(0deg);} */
   }
+@keyframes fadee{
+    from {
+        transform: translateX(-100%);
+    }
+    to{transform: translateX(0%)}
+}
+@keyframes face{
+        from{ transform: rotate(360deg);}
+    to { transform: rotate(0deg);}
+}
 .slider .text-slider{
     position: absolute;
     bottom: 312px;
@@ -840,7 +848,7 @@ button.btn.btn-info {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
 }
-.selling-title h2{
+.selling-title h5{
     position: absolute;
     font-size: 42px;
     justify-content: left;
@@ -849,7 +857,7 @@ button.btn.btn-info {
     z-index: 2;
     font-family: 'Poppins', sans-serif;
 }
-.selling-title span{
+.selling-title h2{
     position: absolute;
     color: #f5f5f5;
     font-size: 90px;
@@ -889,6 +897,7 @@ button.btn.btn-info {
     width: 100%;
     text-align: center;
     flex-wrap: wrap;
+
 }
 
 .items >span{
@@ -931,6 +940,8 @@ button.btn.btn-info {
     width: calc(25% - 30px);
     margin-left: 30px;
     margin-bottom: 5%;
+    animation: fadee linear 1s;
+    /* animation: face linear 1.25s; */
 }
 .items img{
     max-width: 100%;
@@ -983,7 +994,7 @@ button.btn.btn-info {
     position: relative;
     height: 225px;
 }
-.new .latest-title h2{
+.new .latest-title h5{
     position: absolute;
     justify-content: center;
     font-size: 42px;
@@ -991,7 +1002,7 @@ button.btn.btn-info {
     z-index: 1;
     font-weight: 600;
 }
-.new .latest-title span{
+.new .latest-title h2{
     position: absolute;
     justify-content: center;
     color: #ebebeb;
@@ -1121,12 +1132,28 @@ button.btn.btn-info {
 .brands{
     height: 230px;
 }
-.brands-img{
+.brands-img {
+    align-content: center;
     display: flex;
-    padding-top: 55px;
+    padding-top: 5%;
     justify-content: space-between;
 }
-.brands img{
+.brands-img img{
+    width: 100%;
+}
+.brands_mobie{
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: center;
+}
+.brands_r1{
+    display: flex;
+}
+.brands_r2 {
+    display: flex;
+}
+.brands .brands_mobie img{
     max-width: 100%;
     text-align: center;
 }
@@ -1201,6 +1228,7 @@ button.btn.btn-info {
 .listfooter ul li a{
     text-decoration: none;
     color: #8f8f8f;
+    font-size: 13px;
 }
 .footercopyright{
     display: flex;

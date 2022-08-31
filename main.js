@@ -1,3 +1,10 @@
+// show info header
+document.querySelector('.activer_find-us').addEventListener('click', function () {
+	this.parentElement.classList.toggle('open_find-us')
+	this.previousElementSibling.focus()
+})
+
+
 const btn = document.querySelectorAll('#addcart')
 // console.log(btn)
 btn.forEach(function(button,index){
@@ -16,18 +23,19 @@ function addcart(productImg,productName,productPrice){
     var cartItem = document.querySelectorAll('tbody tr')
     for (var i=0;i<cartItem.length;i++){
         var productT = document.querySelectorAll('.name_prd')
-        if(productT[i].innerHTML == productName ){
-        alert('Sản phẩm bạn thêm đã có trong giỏ hàng')
-        return
-        }
+        // if(productT[i].innerHTML == productName ){
+        // alert('Sản phẩm bạn thêm đã có trong giỏ hàng')
+        // return
+        // }
     }
-    var trcontent = '<tr><td><img src="'+productImg+'" alt=""><span class= "name_prd">'+productName+'</span></td><td><span class ="price_prd">'+productPrice+'</span></td><td><input type="number" value="1" min="1"></td>   <td><span class="delete-prd">Xoá</span></td></tr>'
+    var trcontent = '<tr class="cart-row"><td><img src="'+productImg+'" alt=""><span class= "name_prd">'+productName+'</span></td><td><span class ="price_prd">'+productPrice+'</span></td><td><input class="cart-quantity-input" type="number" value="1" min="1"></td>   <td><span class="delete-prd">Xoá</span></td></tr>'
     addtr.innerHTML = trcontent
     var cartTable = document.querySelector('tbody')
     // console.log(cartTable)
     cartTable.append(addtr)
     carttotal()
     deleteCart()
+    
 }
 // --------------------total-price------------------
 function carttotal (){
@@ -48,6 +56,7 @@ function carttotal (){
     var carttotalA = document.querySelector('.price-total span')
     carttotalA.innerHTML = totalC.toLocaleString('de-DE')
     inputchange ()
+    document.getElementsByClassName('item-numb')[0].textContent = i /= 1;
     // console.log(carttotalA)
 }
 // --------------------Delete-cart------------------
@@ -81,3 +90,4 @@ document.getElementById("myBtn").onclick = function() {myFunction()};
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+
