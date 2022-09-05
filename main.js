@@ -4,7 +4,7 @@ document.querySelector('.activer_find-us').addEventListener('click', function ()
 	this.previousElementSibling.focus()
 })
 
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~cart~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const btn = document.querySelectorAll('#addcart')
 // console.log(btn)
 btn.forEach(function(button,index){
