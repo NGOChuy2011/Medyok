@@ -66,7 +66,6 @@ function carttotal (){
     carttotalA.innerHTML = totalC.toLocaleString('de-DE')
     inputchange ()
     document.getElementsByClassName('item-numb')[0].textContent = i /= 1;
-    // console.log(carttotalA)
 }
 // --------------------Delete-cart------------------
 function deleteCart(){
