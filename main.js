@@ -19,23 +19,32 @@ btn.forEach(function(button,index){
     }})
 })
 function addcart(productImg,productName,productPrice){
+    let countItem = 0;
     var addtr = document.createElement('tr')
     var cartItem = document.querySelectorAll('tbody tr')
+
     for (var i=0;i<cartItem.length;i++){
         var productT = document.querySelectorAll('.name_prd')
-        // if(productT[i].innerHTML == productName ){
-        // alert('Sản phẩm bạn thêm đã có trong giỏ hàng')
-        // return
-        // }
+        if(productT[i].innerHTML == productName ){
+            countItem++;
+        }
     }
-    var trcontent = '<tr class="cart-row"><td><img src="'+productImg+'" alt=""><span class= "name_prd">'+productName+'</span></td><td><span class ="price_prd">'+productPrice+'</span></td><td><input class="cart-quantity-input" type="number" value="1" min="1"></td>   <td><span class="delete-prd">Xoá</span></td></tr>'
-    addtr.innerHTML = trcontent
-    var cartTable = document.querySelector('tbody')
-    // console.log(cartTable)
-    cartTable.append(addtr)
+    if(countItem > 0) {
+        let itemNumber = document.getElementById(productName).getAttribute('value');
+        itemNumber++;
+        document.getElementById(productName).setAttribute('value', itemNumber);
+    } else {
+        var trcontent = '<tr class="cart-row"><td><img src="'+productImg+'" alt=""><span class= "name_prd">'+productName+'</span></td><td><span class ="price_prd">'+productPrice+'</span></td><td><input id="'+productName+'" class="cart-quantity-input" type="number" step="1" value="1" min="1"></td>   <td><span class="delete-prd">Xoá</span></td></tr>'
+        addtr.innerHTML = trcontent
+        var cartTable = document.querySelector('tbody')
+        // console.log(cartTable)
+        cartTable.append(addtr)
+    }
+   
     carttotal()
     deleteCart()
-    
+   
+    console.log( );
 }
 // --------------------total-price------------------
 function carttotal (){
