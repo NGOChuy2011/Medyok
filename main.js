@@ -34,7 +34,7 @@ function addcart(productImg,productName,productPrice){
         itemNumber++;
         document.getElementById(productName).setAttribute('value', itemNumber);
     } else {
-        var trcontent = '<tr class="cart-row"><td><img src="'+productImg+'" alt=""><span class= "name_prd">'+productName+'</span></td><td><span class ="price_prd">'+productPrice+'</span></td><td><input id="'+productName+'" class="cart-quantity-input" type="number" step="1" value="1" min="1"></td>   <td><span class="delete-prd">Xoá</span></td></tr>'
+        var trcontent = '<tr class="cart-row"><td><img src="'+productImg+'" alt=""><span class= "name_prd">'+productName+'</span></td><td><span class ="price_prd">'+productPrice+'</span></td> <td> <input id="'+productName+'" class="cart-quantity-input" type="text" step="1" value="1" min="1">  </td>  <td><span class="delete-prd">Xoá</span></td></tr>'
         addtr.innerHTML = trcontent
         var cartTable = document.querySelector('tbody')
         // console.log(cartTable)
@@ -100,3 +100,22 @@ function myFunction() {
 }
 
 
+// $('tbody').on('click', '.minus',function () {
+//     var $input = $(this).parent().find('input');
+//     var count = parseInt($input.val()) - 1;
+//     count = count < 1 ? 1 : count;
+//     $input.val(count);
+//     $input.change();
+//     carttotal ()
+//     return false;
+//   });
+//   $('tbody').on('click', '.plus',function () {
+//     var $input = $(this).parent().find('input');
+//     $input.val(parseInt($input.val()) + 1);
+//     $input.change();
+//     carttotal ()
+//     return false;
+//   });
+
+{/* <a href="#" class="plus is-form">+</a>
+<a href="#" class="minus is-form">-</a> */}

@@ -360,6 +360,8 @@ button.btn.btn-info {
 .cart-click form table tbody tr td input{
     width: 30px;
     outline: none;
+    display: flex;
+    justify-content: center;
 }
 .cart-click form table tbody tr td:last-child{
     cursor: pointer;
