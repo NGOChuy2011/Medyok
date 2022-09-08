@@ -65,7 +65,7 @@ function carttotal (){
     var carttotalA = document.querySelector('.price-total span')
     carttotalA.innerHTML = totalC.toLocaleString('de-DE')
     inputchange ()
-    document.getElementsByClassName('item-numb')[0].textContent = i /= 1;
+    document.getElementsByClassName('item-numb')[0].textContent = i /= 1;/*  */
 }
 // --------------------Delete-cart------------------
 function deleteCart(){
@@ -98,4 +98,5 @@ document.getElementById("myBtn").onclick = function() {myFunction()};
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+
 

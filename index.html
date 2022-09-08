@@ -959,8 +959,32 @@
 </script>
 <!-- js End next top selling -->
 
-
-
+ <!-- click outside -->
+<script>
+$("#myBtn").click(function(e){
+    $(".on_off_cart").show();
+      e.stopPropagation();
+      $(".on_off_cart").click(function(e){
+        e.stopPropagation();
+    });
+    $(document).click(function(){
+        $(".on_off_cart").hide();
+      });
+    });
+</script>
+<!-- click outside -->
+<!-- <script>
+    $(".categori-menu").click(function(e){
+        $(".categori").show();
+          e.stopPropagation();
+          $(".categori").click(function(e){
+            e.stopPropagation();
+        });
+        $(document).click(function(){
+            $(".categori").hide();
+          });
+        });
+    </script> -->
 
 </body>
 
