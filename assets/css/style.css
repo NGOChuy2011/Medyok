@@ -294,6 +294,7 @@ button.btn.btn-info {
     display: none;
 }
 .show {display:block;}
+.hide{ display: none;}
 .close {display: none;}
 .setting-cart .cart .gear-cart{
     position: absolute;
@@ -454,6 +455,19 @@ button.btn.btn-info {
 .navbar-menu .nav li a:last-child{
     padding-right: 0;
 }
+.cosmetic-in {
+    width: 100%;
+    display: none;
+}
+.cosmetic-in li {
+    display: flex !important;
+    justify-content: center !important;
+}
+.cosmetic_in-active{
+    display: block;
+}
+
+
 /* navbar mobie */
 .navbar-btn{
     font-size: 34px;
@@ -637,7 +651,6 @@ button.btn.btn-info {
 .item-hot{
     display: flex;
     width: 293px;
-    cursor: pointer;
 }
 .free-ship-icon{
     background-image: url("../fonts/shipping.png");
@@ -904,7 +917,7 @@ button.btn.btn-info {
 
 }
 
-.items >span{
+.items >a{
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
