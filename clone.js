@@ -26,3 +26,22 @@
 //   timer = setTimeout(showSlides, 3000);
 
 // } 
+
+// thay đổi nút input trong cart
+
+// $('tbody').on('click', '.minus',function () {
+//     var $input = $(this).parent().find('input');
+//     var count = parseInt($input.val()) - 1;
+//     count = count < 1 ? 1 : count;
+//     $input.val(count);
+//     $input.change();
+//     carttotal ()
+//     return false;
+//   });
+//   $('tbody').on('click', '.plus',function () {
+//     var $input = $(this).parent().find('input');
+//     $input.val(parseInt($input.val()) + 1);
+//     $input.change();
+//     carttotal ()
+//     return false;
+//   });

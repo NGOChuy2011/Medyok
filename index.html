@@ -277,29 +277,31 @@
             <div class="header-bottom container">
                 <div class="header-botton-flex">
                     <div class="menu-categories js-menu">
-                        <div onclick="showcate()" class="categori-menu">
-                            <img class="icon-menu" src="assets/fonts/menu.png" alt="☺">
-                            <a href="#">Categories</a>
+                        <div id="categori-menu" class="categori-menu">
+                            <img id="icon-menu" class="icon-menu" src="assets/fonts/menu.png" alt="☺">
+                            <a  href="#">Categories</a>
                         </div>
-                        <ul id="categori" class="categori">
-                            <li class="click-cosmetic">
-                                <a href="#">Categories</a>
-                                <i class="fa-solid fa-circle-plus"></i>
-                            </li>
-                            <ul class="cosmetic-in">
-                                <li class="cosmetic-in-one"><a href="#">Medicine</a></li>
-                                <li class="cosmetic-in-one"><a href="#">Nuchition</a></li>
-                                <li class="cosmetic-in-one"><a href="#">Specialty</a></li>
+                        <div id="menu-dropd" class="menu-dropd">
+                            <ul id="categori" class="categori">
+                                <li class="click-cosmetic">
+                                    <a href="#">Categories</a>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </li>
+                                <ul class="cosmetic-in">
+                                    <li class="cosmetic-in-one"><a href="#">Medicine</a></li>
+                                    <li class="cosmetic-in-one"><a href="#">Nuchition</a></li>
+                                    <li class="cosmetic-in-one"><a href="#">Specialty</a></li>
+                                </ul>
+                                <li class="click-cosmetic1">
+                                    <a href="#">Categories</a>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </li>
+                                <li class="click-cosmetic2">
+                                    <a href="#">Categories</a>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </li>
                             </ul>
-                            <li class="click-cosmetic">
-                                <a href="#">Categories</a>
-                                <i class="fa-solid fa-circle-plus"></i>
-                            </li>
-                            <li class="click-cosmetic">
-                                <a href="#">Categories</a>
-                                <i class="fa-solid fa-circle-plus"></i>
-                            </li>
-                        </ul>
+                        </div>
                     </div>
                     <div class="navbar-menu">
                         <ul class="nav">
@@ -312,17 +314,21 @@
                         </ul>
                     </div>
                     <div class="navbar-btn" id="navbar-btn">
-                        <div class="bars-staggered">
-                            <i class="fa-solid fa-arrow-down-short-wide"></i>
-                            <a href="#">Home</a>
+                        <div class="menumb">
+                            <div  class="bars-staggered">
+                                <i id="showmenu" class="fa-solid fa-arrow-down-short-wide"></i>
+                                <a href="#">Home</a>
+                            </div>
+                            
+                                <ul id="navbar-btn-show" class="navbar-btn-show">
+                                    <li id="li-click"><a href="#">About</a> </li>
+                                    <li id="li-click"><a href="#">Services</a> </li>
+                                    <li id="li-click"><a href="#">Blog</a> </li>
+                                    <li id="li-click"><a href="#">Page</a> </li>
+                                    <li id="li-click"><a href="#">Contact</a> </li>
+                                </ul>
+                            
                         </div>
-                        <ul class="navbar-btn-show">
-                            <li><a href="#">About</a> </li>
-                            <li><a href="#">Services</a> </li>
-                            <li><a href="#">Blog</a> </li>
-                            <li><a href="#">Page</a> </li>
-                            <li><a href="#">Contact</a> </li>
-                        </ul>
                     </div>
                 </div>
 
@@ -881,16 +887,7 @@
         });
     </script>
     <!-- END show seart mobie -->
-    <!-- BEGIN show menu man tabled -->
-    <script>
-        $(document).ready(function () {
-            $(".fa-arrow-down-short-wide").click(function () {
-                $(".navbar-btn-show").slideToggle("slow");
-            });
-        });
-    </script>
-    <!-- END show menu man tabled -->
-    <!-- End JS Categori -->
+
     <!-- js Begin Next slide -->
     <script>
         var slideIndex = 1;

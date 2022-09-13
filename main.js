@@ -95,7 +95,6 @@ function inputchange() {
 // --------------------------------cart----------------------------------------
 // Get the button, and when the user clicks on it, execute myFunction
 document.getElementById("myBtn").onclick = function () { myFunction() };
-
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -156,66 +155,169 @@ window.onload = function () {
 //   }
 // }
 
-// $('tbody').on('click', '.minus',function () {
-//     var $input = $(this).parent().find('input');
-//     var count = parseInt($input.val()) - 1;
-//     count = count < 1 ? 1 : count;
-//     $input.val(count);
-//     $input.change();
-//     carttotal ()
-//     return false;
-//   });
-//   $('tbody').on('click', '.plus',function () {
-//     var $input = $(this).parent().find('input');
-//     $input.val(parseInt($input.val()) + 1);
-//     $input.change();
-//     carttotal ()
-//     return false;
-//   });
 
-
-if ($('.click-cosmetic').length > 0) {
-    $(document).on('click', '.click-cosmetic', function (e) {
-        $(this).closest('.click-cosmetic').find('.cosmetic-in').addClass('cosmetic_in-active');
-        e.preventDefault();
-    })
-} $(document).click(function (e) {
-    var elm = $(e.target);
-    if (!elm.closest('.click-cosmetic').length) {
-        $('.cosmetic-in').removeClass('cosmetic_in-active')
+jQuery(document).ready(function ($) {
+    // dropdown categories*****************************
+    if ($('.menu-categories').length > 0) {
+        $(document).click('', function (e) {
+            e.preventDefault();
+            $(this).closest('.menu-categories').find('.menu-dropd').addClass('active');
+            // $('.menu-categories').removeClass('active')
+        });
+        $(document).click(function (e) {
+            var elm = $(e.target);
+            if (!elm.closest('.menu-categories').length) {
+                $('.menu-dropd').removeClass('active');
+                // $('.menu-dropd').addClass('hide');
+                $('.menu-dropd').find('.categori');
+            };
+        })
     }
-})
-$('.click-cosmetic').click(function (e) {
-    $('.cosmetic-in').toggleClass('cosmetic_in-active');
-    e.preventDefault();
-})
 
+    document.addEventListener('mouseup', function (e) {
+        var container = document.getElementById('categori');
+        if (!container.contains(e.target)) {
+            container.style.display = 'none';
+        }
+    });
+    // dropdown con trong categories*************************
+    if ($('.click-cosmetic').length > 0) {
+        $(document).on('click', '.click-cosmetic', function (e) {
+            $(this).closest('.click-cosmetic').find('.cosmetic-in').addClass('cosmetic_in-active');
+            e.stopPropagation();
+        });
+    } $(document).click(function (e) {
+        var elm = $(e.target);
+        if (!elm.closest('.click-cosmetic').length) {
+            $('.cosmetic-in').removeClass('cosmetic_in-active')
+        };
+    });
+    $('.click-cosmetic').click(function (e) {
+        $('.cosmetic-in').toggleClass('cosmetic_in-active');
+        e.stopPropagation();
+    });
 
-if ($('.click-cosmetic').length > 0) {
-    $(document).on('click', '.click-cosmetic', function (e) {
-        $(this).closest('.click-cosmetic').find('.cosmetic-in').addClass('cosmetic_in-active');
-        e.preventDefault();
-    })
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // if ($('.menumb').length > 0) {
+    //     $(document).click('', function (e) {
+    //         e.preventDefault();
+    //         $(this).closest('.menumb').find('.show-home').addClass('show');
+    //         // $('.menumb').removeClass('active')
+    //     });
+    //     $(document).click(function (e) {
+    //         var elm = $(e.target);
+    //         if (!elm.closest('.menumb').length) {
+    //             $('.show-home').removeClass('show');
+    //             // $('.show-home').addClass('hide');
+    //             $('.show-home').find('.navbar-btn-show');
+    //         };
+    //     })
+    // }
+
+    // document.addEventListener('mouseup', function (e) {
+    //     var container = document.getElementById('navbar-btn-show');
+    //     if (!container.contains(e.target)) {
+    //         container.style.display = 'none';
+    //     }
+    // });
 }
+)
+
+// if ($('.click-cosmetic').length > 0) {
+//     $(document).on('click', '.click-cosmetic', function (e) {
+//         $(this).closest('.click-cosmetic').find('.cosmetic-in').addClass('cosmetic_in-active');
+//         e.preventDefault();
+//     })
+// } $(document).click(function (e) {
+//     var elm = $(e.target);
+//     if (!elm.closest('.click-cosmetic').length) {
+//         $('.cosmetic-in').removeClass('cosmetic_in-active')
+//     }
+// })
+// $('.click-cosmetic').click(function (e) {
+//     $('.cosmetic-in').toggleClass('cosmetic_in-active');
+//     e.preventDefault();
+// })
+
+
+// if ($('.click-cosmetic').length > 0) {
+//     $(document).on('click', '.click-cosmetic', function (e) {
+//         $(this).closest('.click-cosmetic').find('.cosmetic-in').addClass('cosmetic_in-active');
+//         e.preventDefault();
+//     })
+// }
 // click out category
 
-$(".categori-menu").click(function (e) {
-    $(".categori").show();
+// $(".categori-menu").click(function (e) {
+//     $(".categori").show();
+//     e.stopPropagation();
+//     $(".categori").click(function (e) {
+//         e.stopPropagation();
+//     });
+//     $(document).click(function () {
+//         $(".categori").hide();
+//     });
+// })
+
+
+// function showcate() {
+//     var x = document.getElementById("categori");
+//     if (x.style.display === "block") {
+//         x.style.display = "none";
+//     }
+//     else {
+//         x.style.display = "block";
+//     }
+// }
+
+// document.getElementById("categori-menu").onclick = function () { caFunction() };
+// /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+// function caFunction() {
+//     document.getElementById("categori").classList.toggle("show");
+// }
+
+
+// window.onload = function () {
+//     document.onclick = function (e) {
+//         if (e.target.id !== 'categori' && e.target.id !== 'categori-menu' && e.target.id !== 'li-click' && e.target.id !== 'icon-menu') {
+//             document.getElementById("categori").classList.remove("show");
+//         }
+//     };
+// };
+
+
+
+// click out menumibie
+$(".fa-arrow-down-short-wide").click(function (e) {
+    $(".navbar-btn-show").show();
     e.stopPropagation();
-    $(".categori").click(function (e) {
+    $(".navbar-btn-show").click(function (e) {
         e.stopPropagation();
     });
     $(document).click(function () {
-        $(".categori").hide();
+        $(".navbar-btn-show").hide();
     });
 });
 
-function showcate(){
-  var x = document.getElementById("categori");
-  if(x.style.display === "block"){
-    x.style.display = "none";
-  }
-  else{
-    x.style.display = "block";
-  }
-}
+// <!-- BEGIN show menu man tabled -->
+$(document).ready(function () {
+    $(".fa-arrow-down-short-wide").click(function (e) {
+        e.preventDefault();
+        $(".navbar-btn-show").addClass("show");
+    });
+});
+
+// $(document).on('click', function(e) {
+//     var container = $(".navbar-btn-show.show");
+//     if (!$(e.target).closest(container).length) {
+//         console.log(e);
+//     }
+// });
+// $(document).ready(function(){
+//     $(".fa-arrow-down-short-wide").click(function(){
+//         $(".navbar-btn-show").slideToggle("slow");
+//     });
+// });
+// 
+// <!-- END show menu man tabled -->
+
