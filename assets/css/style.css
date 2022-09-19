@@ -930,6 +930,7 @@ button.btn.btn-info {
     margin-top: 10px 0;
     line-height: 22px;
     padding-top: 10px;
+    text-decoration: none;
 }
 .items span:hover{
     color: #0ca8c9;

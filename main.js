@@ -29,6 +29,7 @@ function addcart(productImg, productName, productPrice) {
         var productT = document.querySelectorAll('.name_prd')
         if (productT[i].innerHTML == productName) {
             countItem++;
+
         }
     }
     if (countItem > 0) {
@@ -36,11 +37,12 @@ function addcart(productImg, productName, productPrice) {
         itemNumber++;
         document.getElementById(productName).setAttribute('value', itemNumber);
     } else {
-        var trcontent = '<tr class="cart-row"><td><img src="' + productImg + '" alt=""><span class= "name_prd">' + productName + '</span></td><td><span class ="price_prd">' + productPrice + '</span></td> <td> <input id="' + productName + '" class="cart-quantity-input" type="number" step="1" value="1" min="1"> </input>  </td>  <td><span class="delete-prd">Xoá</span></td></tr>'
+        var trcontent = '<tr id="cart_id" class="cart-row"> <td id="cart_id"><img id="cart_id" src="' + productImg + '" alt=""><span id="cart_id" class= "name_prd">' + productName + '</span></td><td id="cart_id" ><span id="cart_id" class ="price_prd">' + productPrice + '</span></td> <td id="cart_id"> <input id="cart_id" "' + productName + '" class="cart-quantity-input" type="number" step="1" value="1" min="1"> </input></td>  <td id="cart_id"><span id="cart_id" class="delete-prd">Xoá</span></td></tr>'
         addtr.innerHTML = trcontent
         var cartTable = document.querySelector('tbody')
         // console.log(cartTable)
         cartTable.append(addtr)
+        alert("Sản phẩm vừa được thêm vào giỏ hàng!")
     }
 
     carttotal()
@@ -103,7 +105,7 @@ function myFunction() {
 
 window.onload = function () {
     document.onclick = function (e) {
-        if (e.target.id !== 'myDropdown' && e.target.id !== 'myBtn' && e.target.id !== 'cart-click') {
+        if (e.target.id !== 'myDropdown' && e.target.id !== 'myBtn' && e.target.id !== 'cart-click' && e.target.id !== 'cart-items' && e.target.id !== 'cart-row' && e.target.id !== 'cart_id' && e.target.id !== 'thead_id' && e.target.id !== 'price-total') {
             document.getElementById("myDropdown").classList.remove("show");
         }
     };
